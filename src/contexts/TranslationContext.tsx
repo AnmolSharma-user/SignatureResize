@@ -1,15 +1,10 @@
 
-import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
-import { useGoogleTranslate } from '../hooks/useGoogleTranslate';
+import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 interface TranslationContextType {
   language: string;
   setLanguage: (lang: string) => void;
   translate: (key: string) => string;
-  isTranslating: boolean;
-  translationError: string | null;
-  setApiKey: (key: string) => void;
-  hasApiKey: boolean;
 }
 
 const TranslationContext = createContext<TranslationContextType | undefined>(undefined);
@@ -45,54 +40,48 @@ const baseTranslations = {
   'tips.importantNotes': 'Important Notes'
 };
 
+// Hindi translations
+const hindiTranslations = {
+  'tab.main': 'मुख्य उपकरण',
+  'tab.signature-resize-10-20kb': 'हस्ताक्षर रीसाइज़ 10 से 20 KB',
+  'tab.signature-resize-20kb': 'हस्ताक्षर रीसाइज़ 20KB',
+  'tab.ssc-mts': 'SSC MTS हस्ताक्षर रीसाइज़',
+  'tab.pan-card': 'PAN कार्ड फोटो हस्ताक्षर रीसाइज़ टूल',
+  'tab.signature-resize-50kb': 'हस्ताक्षर रीसाइज़ 50 KB',
+  'tab.gate': 'GATE हस्ताक्षर रीसाइज़',
+  'tab.rrb': 'RRB हस्ताक्षर रीसाइज़',
+  'tab.uti': 'UTI फोटो हस्ताक्षर रीसाइज़',
+  'content.ssc.title': 'SSC MTS हस्ताक्षर रीसाइज़ दिशानिर्देश',
+  'content.pan.title': 'PAN कार्ड फोटो और हस्ताक्षर दिशानिर्देश',
+  'content.gate.title': 'GATE हस्ताक्षर आवश्यकताएं',
+  'content.rrb.title': 'RRB हस्ताक्षर विनिर्देश',
+  'content.uti.title': 'UTI/NPS फॉर्म आवश्यकताएं',
+  'content.10-20kb.title': '10-20KB हस्ताक्षर रीसाइज़ दिशानिर्देश',
+  'content.20kb.title': '20KB हस्ताक्षर रीसाइज़ दिशानिर्देश',
+  'content.50kb.title': '50KB हस्ताक्षर रीसाइज़ दिशानिर्देश',
+  'spec.dimensions': 'आयाम',
+  'spec.fileSize': 'फ़ाइल का आकार',
+  'spec.format': 'प्रारूप',
+  'spec.background': 'पृष्ठभूमि',
+  'spec.aspectRatio': 'पक्ष अनुपात',
+  'spec.resolution': 'रिज़ॉल्यूशन',
+  'spec.quality': 'गुणवत्ता',
+  'spec.compression': 'संपीड़न',
+  'tips.bestPractices': 'सर्वोत्तम प्रथाएं',
+  'tips.importantNotes': 'महत्वपूर्ण नोट्स'
+};
+
 interface TranslationProviderProps {
   children: ReactNode;
 }
 
 export const TranslationProvider: React.FC<TranslationProviderProps> = ({ children }) => {
   const [language, setLanguage] = useState('en');
-  const [translatedTexts, setTranslatedTexts] = useState<Record<string, string>>({});
-  const { translateMultiple, setApiKey, hasApiKey, isTranslating, error } = useGoogleTranslate();
-
-  // Translate all texts when language changes to Hindi
-  useEffect(() => {
-    const translateAllTexts = async () => {
-      if (language === 'hi' && hasApiKey()) {
-        const keys = Object.keys(baseTranslations);
-        const englishTexts = Object.values(baseTranslations);
-        
-        try {
-          const hindiTexts = await translateMultiple(englishTexts, 'hi', 'en');
-          const translated: Record<string, string> = {};
-          
-          keys.forEach((key, index) => {
-            translated[key] = hindiTexts[index];
-          });
-          
-          setTranslatedTexts(translated);
-        } catch (error) {
-          console.error('Failed to translate texts:', error);
-        }
-      } else if (language === 'en') {
-        setTranslatedTexts({});
-      }
-    };
-
-    translateAllTexts();
-  }, [language, hasApiKey, translateMultiple]);
 
   const translate = (key: string): string => {
-    // If English or no API key, return base translation
-    if (language === 'en' || !hasApiKey()) {
-      return baseTranslations[key as keyof typeof baseTranslations] || key;
+    if (language === 'hi') {
+      return hindiTranslations[key as keyof typeof hindiTranslations] || baseTranslations[key as keyof typeof baseTranslations] || key;
     }
-    
-    // If Hindi and we have translated text, return it
-    if (language === 'hi' && translatedTexts[key]) {
-      return translatedTexts[key];
-    }
-    
-    // Fallback to base translation
     return baseTranslations[key as keyof typeof baseTranslations] || key;
   };
 
@@ -100,11 +89,7 @@ export const TranslationProvider: React.FC<TranslationProviderProps> = ({ childr
     <TranslationContext.Provider value={{ 
       language, 
       setLanguage, 
-      translate, 
-      isTranslating,
-      translationError: error,
-      setApiKey,
-      hasApiKey: hasApiKey()
+      translate
     }}>
       {children}
     </TranslationContext.Provider>

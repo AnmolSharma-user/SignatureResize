@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -9,8 +10,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useTranslation } from '../contexts/TranslationContext';
-import ApiKeySetup from './ApiKeySetup';
-import { Loader2 } from 'lucide-react';
 
 interface TabNavigationProps {
   activeTab: string;
@@ -38,14 +37,7 @@ const languages = [
 const TabNavigation: React.FC<TabNavigationProps> = ({ activeTab, setActiveTab }) => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { 
-    language, 
-    setLanguage, 
-    translate, 
-    isTranslating, 
-    setApiKey, 
-    hasApiKey 
-  } = useTranslation();
+  const { language, setLanguage, translate } = useTranslation();
 
   const getActiveTabFromPath = () => {
     const path = location.pathname;
@@ -75,13 +67,6 @@ const TabNavigation: React.FC<TabNavigationProps> = ({ activeTab, setActiveTab }
   return (
     <div className="bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-slate-700">
       <div className="container mx-auto px-4">
-        {/* API Key Setup - Show when Hindi is selected but no API key */}
-        {language === 'hi' && !hasApiKey && (
-          <div className="py-4 border-b border-blue-200">
-            <ApiKeySetup onApiKeySet={setApiKey} hasApiKey={hasApiKey} />
-          </div>
-        )}
-
         <div className="flex items-center justify-between">
           <div className="flex overflow-x-auto scrollbar-hide flex-1">
             <div className="flex min-w-max">
@@ -124,9 +109,6 @@ const TabNavigation: React.FC<TabNavigationProps> = ({ activeTab, setActiveTab }
           
           {/* Language Selector */}
           <div className="ml-4 flex-shrink-0 flex items-center gap-2">
-            {isTranslating && (
-              <Loader2 className="h-4 w-4 animate-spin text-blue-600" />
-            )}
             <Select value={language} onValueChange={handleLanguageChange}>
               <SelectTrigger className="w-[140px] bg-white dark:bg-slate-800 border-gray-200 dark:border-slate-600">
                 <SelectValue>
