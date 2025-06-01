@@ -17,12 +17,12 @@ const UtiPhotoSignatureResize = () => {
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         <TabNavigation activeTab="uti" setActiveTab={() => {}} />
         
-        <div className="container mx-auto px-4 py-8">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-            <div className="lg:col-span-3">
+        <div className="container mx-auto px-2 sm:px-4 py-4 sm:py-8">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-8">
+            <div className="lg:col-span-3 order-2 lg:order-1">
               <MainContent activeTab="uti" />
             </div>
-            <div className="lg:col-span-1">
+            <div className="lg:col-span-1 order-1 lg:order-2">
               <Sidebar />
             </div>
           </div>
