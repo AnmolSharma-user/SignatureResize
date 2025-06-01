@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -224,15 +223,6 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab }) => {
       return;
     }
 
-    if (format === 'SVG') {
-      toast({
-        title: "SVG Format",
-        description: "SVG format is available in the Pro version.",
-        variant: "default"
-      });
-      return;
-    }
-
     const canvas = canvasRef.current;
     if (!canvas) return;
 
@@ -240,7 +230,16 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab }) => {
     const link = document.createElement('a');
     link.download = `signature_${parseInt(customWidth)}x${parseInt(customHeight)}.${format.toLowerCase()}`;
     
-    if (format === 'PNG') {
+    if (format === 'SVG') {
+      // Create SVG version
+      const svgContent = `
+        <svg width="${customWidth}" height="${customHeight}" xmlns="http://www.w3.org/2000/svg">
+          <image href="${canvas.toDataURL('image/png', 1.0)}" width="${customWidth}" height="${customHeight}"/>
+        </svg>
+      `;
+      const blob = new Blob([svgContent], { type: 'image/svg+xml' });
+      link.href = URL.createObjectURL(blob);
+    } else if (format === 'PNG') {
       link.href = canvas.toDataURL('image/png', 1.0);
     } else {
       link.href = canvas.toDataURL('image/jpeg', 0.9);
@@ -465,10 +464,9 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab }) => {
               <Download className="h-4 w-4 mr-2" />
               Download JPG
             </Button>
-            <Button onClick={() => downloadImage('SVG')} variant="outline" className="relative">
+            <Button onClick={() => downloadImage('SVG')} variant="outline">
               <Download className="h-4 w-4 mr-2" />
               Download SVG
-              <span className="absolute -top-2 -right-2 bg-orange-500 text-white text-xs px-1 rounded">Pro</span>
             </Button>
           </div>
         </CardContent>
