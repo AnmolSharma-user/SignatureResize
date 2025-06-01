@@ -1,3 +1,4 @@
+
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -8,6 +9,7 @@ import { Label } from '@/components/ui/label';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { Upload, Download, Share, Lock, Unlock, Info, RotateCcw, RefreshCw } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
+import ContentArea from './ContentArea';
 
 interface MainContentProps {
   activeTab: string;
@@ -276,6 +278,9 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab }) => {
     <div className="space-y-6">
       {/* Hidden canvas for processing */}
       <canvas ref={canvasRef} className="hidden" />
+      
+      {/* Content Area - New addition */}
+      <ContentArea activeTab={activeTab} />
       
       {/* Preset Info Banner */}
       {activeTab !== 'main' && (
