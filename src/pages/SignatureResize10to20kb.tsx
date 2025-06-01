@@ -14,14 +14,14 @@ const SignatureResize10to20kb = () => {
   return (
     <TooltipProvider>
       <Helmet>
-        <title>Signature Resize 10 to 20 KB | Free Online Tool | SignatureResize.pro</title>
+        <title>Signature Resize 10 to 20 KB | Free Online Tool | SignatureResize.com</title>
         <meta name="description" content="Resize signature from 10KB to 20KB online for free. Perfect for government forms, job applications. Fast, secure, and easy to use signature resizer." />
         <meta name="keywords" content="signature resize 10 to 20 kb, signature resize 10kb to 20kb, resize signature 10-20kb, signature size converter" />
-        <link rel="canonical" href="https://signatureresize.pro/signature-resize-10-to-20-kb" />
+        <link rel="canonical" href="https://signatureresize.com/signature-resize-10-to-20-kb" />
         
         <meta property="og:title" content="Signature Resize 10 to 20 KB | Free Online Tool" />
         <meta property="og:description" content="Resize signature from 10KB to 20KB online for free. Perfect for government forms, job applications." />
-        <meta property="og:url" content="https://signatureresize.pro/signature-resize-10-to-20-kb" />
+        <meta property="og:url" content="https://signatureresize.com/signature-resize-10-to-20-kb" />
         
         <meta name="twitter:title" content="Signature Resize 10 to 20 KB | Free Online Tool" />
         <meta name="twitter:description" content="Resize signature from 10KB to 20KB online for free." />

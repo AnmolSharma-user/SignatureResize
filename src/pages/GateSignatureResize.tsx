@@ -14,14 +14,14 @@ const GateSignatureResize = () => {
   return (
     <TooltipProvider>
       <Helmet>
-        <title>GATE Signature Resize Tool | Free Online | SignatureResize.pro</title>
+        <title>GATE Signature Resize Tool | Free Online | SignatureResize.com</title>
         <meta name="description" content="Resize signature for GATE exam application online for free. Perfect size and format for GATE registration. Fast, secure, and easy to use." />
         <meta name="keywords" content="gate signature resize, gate exam signature resize, gate application signature, gate photo signature resize, gate registration signature" />
-        <link rel="canonical" href="https://signatureresize.pro/gate-signature-resize" />
+        <link rel="canonical" href="https://signatureresize.com/gate-signature-resize" />
         
         <meta property="og:title" content="GATE Signature Resize Tool | Free Online" />
         <meta property="og:description" content="Resize signature for GATE exam application online for free. Perfect size and format for GATE registration." />
-        <meta property="og:url" content="https://signatureresize.pro/gate-signature-resize" />
+        <meta property="og:url" content="https://signatureresize.com/gate-signature-resize" />
         
         <meta name="twitter:title" content="GATE Signature Resize Tool | Free Online" />
         <meta name="twitter:description" content="Resize signature for GATE exam application online for free." />

@@ -14,16 +14,16 @@ const PrivacyPolicy = () => {
   return (
     <TooltipProvider>
       <Helmet>
-        <title>Privacy Policy | SignatureResize.pro | Secure Signature Resizing</title>
-        <meta name="description" content="Read our privacy policy. SignatureResize.pro processes all images locally in your browser. Your signatures never leave your device. Complete privacy guaranteed." />
+        <title>Privacy Policy | SignatureResize.com | Secure Signature Resizing</title>
+        <meta name="description" content="Read our privacy policy. SignatureResize.com processes all images locally in your browser. Your signatures never leave your device. Complete privacy guaranteed." />
         <meta name="keywords" content="signature resize privacy policy, secure signature tool, privacy signature resize, local image processing" />
-        <link rel="canonical" href="https://signatureresize.pro/privacy-policy" />
+        <link rel="canonical" href="https://signatureresize.com/privacy-policy" />
         
-        <meta property="og:title" content="Privacy Policy | SignatureResize.pro" />
+        <meta property="og:title" content="Privacy Policy | SignatureResize.com" />
         <meta property="og:description" content="Read our privacy policy. Complete privacy guaranteed - images processed locally." />
-        <meta property="og:url" content="https://signatureresize.pro/privacy-policy" />
+        <meta property="og:url" content="https://signatureresize.com/privacy-policy" />
         
-        <meta name="twitter:title" content="Privacy Policy | SignatureResize.pro" />
+        <meta name="twitter:title" content="Privacy Policy | SignatureResize.com" />
         <meta name="twitter:description" content="Read our privacy policy. Complete privacy guaranteed." />
       </Helmet>
       

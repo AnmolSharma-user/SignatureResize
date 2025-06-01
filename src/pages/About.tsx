@@ -15,17 +15,17 @@ const About = () => {
   return (
     <TooltipProvider>
       <Helmet>
-        <title>About Us | SignatureResize.pro | Free Online Signature Resizer</title>
-        <meta name="description" content="Learn about SignatureResize.pro - the free online signature resizing tool. Our mission, features, and commitment to privacy and security." />
+        <title>About Us | SignatureResize.com | Free Online Signature Resizer</title>
+        <meta name="description" content="Learn about SignatureResize.com - the free online signature resizing tool. Our mission, features, and commitment to privacy and security." />
         <meta name="keywords" content="about signature resize, signature resizer tool, free signature tool, online signature resize, signature resize privacy" />
-        <link rel="canonical" href="https://signatureresize.pro/about" />
+        <link rel="canonical" href="https://signatureresize.com/about" />
         
-        <meta property="og:title" content="About Us | SignatureResize.pro" />
-        <meta property="og:description" content="Learn about SignatureResize.pro - the free online signature resizing tool." />
-        <meta property="og:url" content="https://signatureresize.pro/about" />
+        <meta property="og:title" content="About Us | SignatureResize.com" />
+        <meta property="og:description" content="Learn about SignatureResize.com - the free online signature resizing tool." />
+        <meta property="og:url" content="https://signatureresize.com/about" />
         
-        <meta name="twitter:title" content="About Us | SignatureResize.pro" />
-        <meta name="twitter:description" content="Learn about SignatureResize.pro - the free online signature resizing tool." />
+        <meta name="twitter:title" content="About Us | SignatureResize.com" />
+        <meta name="twitter:description" content="Learn about SignatureResize.com - the free online signature resizing tool." />
       </Helmet>
       
       <div className={`min-h-screen bg-white ${darkMode ? 'dark' : ''} font-inter`}>
