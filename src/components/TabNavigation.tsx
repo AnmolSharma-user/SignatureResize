@@ -10,13 +10,11 @@ interface TabNavigationProps {
 
 const tabs = [
   { id: 'main', label: 'Main Tool', path: '/' },
-  { id: 'ssc', label: 'SSC MTS', path: '/ssc-mts-signature-resize' },
+  { id: 'ssc', label: 'SSC CGL/MTS', path: '/ssc-mts-signature-resize' },
   { id: 'pan', label: 'PAN Card', path: '/pan-card-photo-signature-resize-tool' },
-  { id: 'gate', label: 'GATE', path: '/gate-signature-resize' },
-  { id: 'rrb', label: 'RRB', path: '/rrb-signature-resize' },
-  { id: 'uti', label: 'UTI/NPS', path: '/uti-photo-signature-resize' },
-  { id: '20kb', label: '20KB', path: '/signature-resize-20kb' },
-  { id: '50kb', label: '50KB', path: '/signature-resize-50-kb' },
+  { id: 'gate', label: 'GATE/RRB', path: '/gate-signature-resize' },
+  { id: 'rrb', label: 'UTI/NPS', path: '/rrb-signature-resize' },
+  { id: 'uti', label: 'Bank Forms', path: '/uti-photo-signature-resize' },
 ];
 
 const TabNavigation: React.FC<TabNavigationProps> = ({ activeTab, setActiveTab }) => {
@@ -43,34 +41,43 @@ const TabNavigation: React.FC<TabNavigationProps> = ({ activeTab, setActiveTab }
   };
 
   return (
-    <div className="bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 border-b border-gray-200 dark:border-gray-700 shadow-sm">
-      <div className="container mx-auto px-4 sm:px-6">
-        <div className="flex overflow-x-auto scrollbar-hide py-3 sm:py-4">
-          <div className="flex space-x-2 sm:space-x-3 min-w-max mx-auto">
-            {tabs.map((tab, index) => (
-              <Button
+    <div className="bg-slate-900 dark:bg-slate-950 border-b border-slate-700 dark:border-slate-800">
+      <div className="container mx-auto px-4">
+        <div className="flex overflow-x-auto scrollbar-hide">
+          <div className="flex min-w-max">
+            {tabs.map((tab) => (
+              <button
                 key={tab.id}
-                variant="ghost"
-                className={`relative px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl font-medium text-sm sm:text-base transition-all duration-300 ease-in-out transform hover:scale-105 ${
-                  currentActiveTab === tab.id 
-                    ? 'bg-white dark:bg-gray-700 text-primary shadow-lg shadow-gray-200/50 dark:shadow-gray-900/50 border border-gray-200 dark:border-gray-600' 
-                    : 'text-gray-600 dark:text-gray-300 hover:bg-white/70 dark:hover:bg-gray-700/70 hover:text-gray-900 dark:hover:text-white hover:shadow-md'
-                } ${index === 0 ? 'ml-0' : ''}`}
                 onClick={() => handleTabClick(tab)}
+                className={`
+                  relative px-6 py-4 text-sm font-medium transition-all duration-200 ease-in-out
+                  border-b-2 whitespace-nowrap flex items-center gap-2
+                  ${currentActiveTab === tab.id 
+                    ? 'text-blue-400 border-blue-400 bg-slate-800/50 dark:bg-slate-900/50' 
+                    : 'text-slate-300 dark:text-slate-400 border-transparent hover:text-white hover:bg-slate-800/30 dark:hover:bg-slate-900/30'
+                  }
+                `}
               >
-                <span className="relative z-10">{tab.label}</span>
+                {/* Icon based on tab type */}
+                <span className="text-base">
+                  {tab.id === 'main' && '🔧'}
+                  {tab.id === 'ssc' && '📋'}
+                  {tab.id === 'pan' && '💳'}
+                  {tab.id === 'gate' && '🎓'}
+                  {tab.id === 'rrb' && '🏦'}
+                  {tab.id === 'uti' && '📄'}
+                </span>
+                
+                <span>{tab.label}</span>
+                
+                {/* Active indicator */}
                 {currentActiveTab === tab.id && (
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-primary/10 rounded-xl" />
+                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-400 rounded-t-full" />
                 )}
-              </Button>
+              </button>
             ))}
           </div>
         </div>
-      </div>
-      
-      {/* Active tab indicator line */}
-      <div className="relative">
-        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
       </div>
     </div>
   );
