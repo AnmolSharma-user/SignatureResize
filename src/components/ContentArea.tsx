@@ -3,22 +3,25 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { CheckCircle, AlertCircle, FileImage, Zap } from 'lucide-react';
+import { useTranslation } from '../contexts/TranslationContext';
 
 interface ContentAreaProps {
   activeTab: string;
 }
 
 const ContentArea: React.FC<ContentAreaProps> = ({ activeTab }) => {
+  const { translate } = useTranslation();
+
   const getTabContent = () => {
     switch (activeTab) {
       case 'ssc':
         return {
-          title: 'SSC MTS Signature Resize Guidelines',
+          title: translate('content.ssc.title'),
           specs: [
-            { label: 'Dimensions', value: '140 x 60 pixels' },
-            { label: 'File Size', value: 'Maximum 20KB' },
-            { label: 'Format', value: 'JPG/PNG' },
-            { label: 'Background', value: 'White preferred' }
+            { label: translate('spec.dimensions'), value: '140 x 60 pixels' },
+            { label: translate('spec.fileSize'), value: 'Maximum 20KB' },
+            { label: translate('spec.format'), value: 'JPG/PNG' },
+            { label: translate('spec.background'), value: 'White preferred' }
           ],
           tips: [
             'Keep signature clear and bold',
@@ -29,12 +32,12 @@ const ContentArea: React.FC<ContentAreaProps> = ({ activeTab }) => {
         };
       case 'pan':
         return {
-          title: 'PAN Card Photo & Signature Guidelines',
+          title: translate('content.pan.title'),
           specs: [
-            { label: 'Dimensions', value: '132 x 302 pixels' },
-            { label: 'File Size', value: 'Maximum 20KB' },
-            { label: 'Format', value: 'JPG/PNG' },
-            { label: 'Aspect Ratio', value: '35:80mm' }
+            { label: translate('spec.dimensions'), value: '132 x 302 pixels' },
+            { label: translate('spec.fileSize'), value: 'Maximum 20KB' },
+            { label: translate('spec.format'), value: 'JPG/PNG' },
+            { label: translate('spec.aspectRatio'), value: '35:80mm' }
           ],
           tips: [
             'Use recent photograph',
@@ -45,12 +48,12 @@ const ContentArea: React.FC<ContentAreaProps> = ({ activeTab }) => {
         };
       case 'gate':
         return {
-          title: 'GATE Signature Requirements',
+          title: translate('content.gate.title'),
           specs: [
-            { label: 'Dimensions', value: '200 x 100 pixels' },
-            { label: 'File Size', value: 'Maximum 50KB' },
-            { label: 'Format', value: 'JPG/PNG' },
-            { label: 'Resolution', value: 'High quality' }
+            { label: translate('spec.dimensions'), value: '200 x 100 pixels' },
+            { label: translate('spec.fileSize'), value: 'Maximum 50KB' },
+            { label: translate('spec.format'), value: 'JPG/PNG' },
+            { label: translate('spec.resolution'), value: 'High quality' }
           ],
           tips: [
             'Signature must be recent',
@@ -61,12 +64,12 @@ const ContentArea: React.FC<ContentAreaProps> = ({ activeTab }) => {
         };
       case 'rrb':
         return {
-          title: 'RRB Signature Specifications',
+          title: translate('content.rrb.title'),
           specs: [
-            { label: 'Dimensions', value: '200 x 100 pixels' },
-            { label: 'File Size', value: 'Maximum 50KB' },
-            { label: 'Format', value: 'JPG/PNG' },
-            { label: 'Quality', value: 'Clear and sharp' }
+            { label: translate('spec.dimensions'), value: '200 x 100 pixels' },
+            { label: translate('spec.fileSize'), value: 'Maximum 50KB' },
+            { label: translate('spec.format'), value: 'JPG/PNG' },
+            { label: translate('spec.quality'), value: 'Clear and sharp' }
           ],
           tips: [
             'Follow RRB guidelines strictly',
@@ -77,12 +80,12 @@ const ContentArea: React.FC<ContentAreaProps> = ({ activeTab }) => {
         };
       case 'uti':
         return {
-          title: 'UTI/NPS Form Requirements',
+          title: translate('content.uti.title'),
           specs: [
-            { label: 'Dimensions', value: '150 x 75 pixels' },
-            { label: 'File Size', value: 'Maximum 30KB' },
-            { label: 'Format', value: 'JPG/PNG' },
-            { label: 'Background', value: 'White/Transparent' }
+            { label: translate('spec.dimensions'), value: '150 x 75 pixels' },
+            { label: translate('spec.fileSize'), value: 'Maximum 30KB' },
+            { label: translate('spec.format'), value: 'JPG/PNG' },
+            { label: translate('spec.background'), value: 'White/Transparent' }
           ],
           tips: [
             'Signature for financial documents',
@@ -93,12 +96,12 @@ const ContentArea: React.FC<ContentAreaProps> = ({ activeTab }) => {
         };
       case '10-20kb':
         return {
-          title: '10-20KB Signature Resize Guidelines',
+          title: translate('content.10-20kb.title'),
           specs: [
-            { label: 'Dimensions', value: '140 x 60 pixels' },
-            { label: 'File Size', value: '10-20KB range' },
-            { label: 'Format', value: 'JPG/PNG' },
-            { label: 'Compression', value: 'Optimized' }
+            { label: translate('spec.dimensions'), value: '140 x 60 pixels' },
+            { label: translate('spec.fileSize'), value: '10-20KB range' },
+            { label: translate('spec.format'), value: 'JPG/PNG' },
+            { label: translate('spec.compression'), value: 'Optimized' }
           ],
           tips: [
             'Perfect for most government forms',
@@ -109,12 +112,12 @@ const ContentArea: React.FC<ContentAreaProps> = ({ activeTab }) => {
         };
       case '20kb':
         return {
-          title: '20KB Signature Resize Guidelines',
+          title: translate('content.20kb.title'),
           specs: [
-            { label: 'Dimensions', value: '140 x 60 pixels' },
-            { label: 'File Size', value: 'Maximum 20KB' },
-            { label: 'Format', value: 'JPG/PNG' },
-            { label: 'Quality', value: 'Standard' }
+            { label: translate('spec.dimensions'), value: '140 x 60 pixels' },
+            { label: translate('spec.fileSize'), value: 'Maximum 20KB' },
+            { label: translate('spec.format'), value: 'JPG/PNG' },
+            { label: translate('spec.quality'), value: 'Standard' }
           ],
           tips: [
             'Standard size for most applications',
@@ -125,12 +128,12 @@ const ContentArea: React.FC<ContentAreaProps> = ({ activeTab }) => {
         };
       case '50kb':
         return {
-          title: '50KB Signature Resize Guidelines',
+          title: translate('content.50kb.title'),
           specs: [
-            { label: 'Dimensions', value: '200 x 100 pixels' },
-            { label: 'File Size', value: 'Maximum 50KB' },
-            { label: 'Format', value: 'JPG/PNG' },
-            { label: 'Quality', value: 'High' }
+            { label: translate('spec.dimensions'), value: '200 x 100 pixels' },
+            { label: translate('spec.fileSize'), value: 'Maximum 50KB' },
+            { label: translate('spec.format'), value: 'JPG/PNG' },
+            { label: translate('spec.quality'), value: 'High' }
           ],
           tips: [
             'Higher quality for detailed signatures',
@@ -143,10 +146,10 @@ const ContentArea: React.FC<ContentAreaProps> = ({ activeTab }) => {
         return {
           title: 'General Signature Resize Guidelines',
           specs: [
-            { label: 'Dimensions', value: 'Variable' },
-            { label: 'File Size', value: 'Optimized' },
-            { label: 'Format', value: 'JPG/PNG/SVG' },
-            { label: 'Quality', value: 'High resolution' }
+            { label: translate('spec.dimensions'), value: 'Variable' },
+            { label: translate('spec.fileSize'), value: 'Optimized' },
+            { label: translate('spec.format'), value: 'JPG/PNG/SVG' },
+            { label: translate('spec.quality'), value: 'High resolution' }
           ],
           tips: [
             'Choose appropriate dimensions',
@@ -188,7 +191,7 @@ const ContentArea: React.FC<ContentAreaProps> = ({ activeTab }) => {
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-green-700 dark:text-green-400">
               <CheckCircle className="h-5 w-5" />
-              Best Practices
+              {translate('tips.bestPractices')}
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -207,7 +210,7 @@ const ContentArea: React.FC<ContentAreaProps> = ({ activeTab }) => {
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-orange-700 dark:text-orange-400">
               <AlertCircle className="h-5 w-5" />
-              Important Notes
+              {translate('tips.importantNotes')}
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">

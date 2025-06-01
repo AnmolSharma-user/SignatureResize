@@ -8,6 +8,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { useTranslation } from '../contexts/TranslationContext';
 
 interface TabNavigationProps {
   activeTab: string;
@@ -15,15 +16,15 @@ interface TabNavigationProps {
 }
 
 const tabs = [
-  { id: 'main', label: 'Main Tool', path: '/' },
-  { id: '10-20kb', label: 'Signature Resize 10 to 20 KB', path: '/signature-resize-10-to-20-kb' },
-  { id: '20kb', label: 'Signature Resize 20KB', path: '/signature-resize-20kb' },
-  { id: 'ssc', label: 'SSC MTS Signature Resize', path: '/ssc-mts-signature-resize' },
-  { id: 'pan', label: 'PAN Card Photo Signature Resize Tool', path: '/pan-card-photo-signature-resize-tool' },
-  { id: '50kb', label: 'Signature Resize 50 KB', path: '/signature-resize-50-kb' },
-  { id: 'gate', label: 'GATE Signature Resize', path: '/gate-signature-resize' },
-  { id: 'rrb', label: 'RRB Signature Resize', path: '/rrb-signature-resize' },
-  { id: 'uti', label: 'UTI Photo Signature Resize', path: '/uti-photo-signature-resize' },
+  { id: 'main', label: 'tab.main', path: '/' },
+  { id: '10-20kb', label: 'tab.signature-resize-10-20kb', path: '/signature-resize-10-to-20-kb' },
+  { id: '20kb', label: 'tab.signature-resize-20kb', path: '/signature-resize-20kb' },
+  { id: 'ssc', label: 'tab.ssc-mts', path: '/ssc-mts-signature-resize' },
+  { id: 'pan', label: 'tab.pan-card', path: '/pan-card-photo-signature-resize-tool' },
+  { id: '50kb', label: 'tab.signature-resize-50kb', path: '/signature-resize-50-kb' },
+  { id: 'gate', label: 'tab.gate', path: '/gate-signature-resize' },
+  { id: 'rrb', label: 'tab.rrb', path: '/rrb-signature-resize' },
+  { id: 'uti', label: 'tab.uti', path: '/uti-photo-signature-resize' },
 ];
 
 const languages = [
@@ -42,7 +43,7 @@ const languages = [
 const TabNavigation: React.FC<TabNavigationProps> = ({ activeTab, setActiveTab }) => {
   const navigate = useNavigate();
   const location = useLocation();
-  const [selectedLanguage, setSelectedLanguage] = React.useState('en');
+  const { language, setLanguage, translate } = useTranslation();
 
   const getActiveTabFromPath = () => {
     const path = location.pathname;
@@ -65,8 +66,7 @@ const TabNavigation: React.FC<TabNavigationProps> = ({ activeTab, setActiveTab }
   };
 
   const handleLanguageChange = (languageCode: string) => {
-    setSelectedLanguage(languageCode);
-    // Here you would implement the actual translation logic
+    setLanguage(languageCode);
     console.log('Language changed to:', languageCode);
   };
 
@@ -100,7 +100,7 @@ const TabNavigation: React.FC<TabNavigationProps> = ({ activeTab, setActiveTab }
                     {tab.id === 'uti' && '📄'}
                   </span>
                   
-                  <span className="truncate max-w-[120px] sm:max-w-none">{tab.label}</span>
+                  <span className="truncate max-w-[120px] sm:max-w-none">{translate(tab.label)}</span>
                   
                   {/* Active indicator */}
                   {currentActiveTab === tab.id && (
@@ -113,16 +113,16 @@ const TabNavigation: React.FC<TabNavigationProps> = ({ activeTab, setActiveTab }
           
           {/* Language Selector */}
           <div className="ml-4 flex-shrink-0">
-            <Select value={selectedLanguage} onValueChange={handleLanguageChange}>
+            <Select value={language} onValueChange={handleLanguageChange}>
               <SelectTrigger className="w-[140px] bg-white dark:bg-slate-800 border-gray-200 dark:border-slate-600">
                 <SelectValue>
                   <div className="flex items-center gap-2">
-                    <span>{languages.find(lang => lang.code === selectedLanguage)?.flag}</span>
+                    <span>{languages.find(lang => lang.code === language)?.flag}</span>
                     <span className="hidden sm:inline">
-                      {languages.find(lang => lang.code === selectedLanguage)?.name}
+                      {languages.find(lang => lang.code === language)?.name}
                     </span>
                     <span className="sm:hidden">
-                      {languages.find(lang => lang.code === selectedLanguage)?.code.toUpperCase()}
+                      {languages.find(lang => lang.code === language)?.code.toUpperCase()}
                     </span>
                   </div>
                 </SelectValue>
