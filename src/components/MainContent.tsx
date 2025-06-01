@@ -181,7 +181,7 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab }) => {
                       <Checkbox
                         id="remove-bg"
                         checked={removeBackground}
-                        onCheckedChange={setRemoveBackground}
+                        onCheckedChange={(checked) => setRemoveBackground(checked === true)}
                       />
                       <Label htmlFor="remove-bg">Remove Background (PNG)</Label>
                     </div>
@@ -189,7 +189,7 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab }) => {
                       <Checkbox
                         id="keep-bg"
                         checked={!removeBackground}
-                        onCheckedChange={(checked) => setRemoveBackground(!checked)}
+                        onCheckedChange={(checked) => setRemoveBackground(checked !== true)}
                       />
                       <Label htmlFor="keep-bg">Keep Background (JPG)</Label>
                     </div>
