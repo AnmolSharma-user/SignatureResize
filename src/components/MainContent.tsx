@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -279,9 +278,6 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab }) => {
       {/* Hidden canvas for processing */}
       <canvas ref={canvasRef} className="hidden" />
       
-      {/* Content Area - New addition */}
-      <ContentArea activeTab={activeTab} />
-      
       {/* Preset Info Banner */}
       {activeTab !== 'main' && (
         <Card className="bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800">
@@ -476,6 +472,9 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab }) => {
           </div>
         </CardContent>
       </Card>
+
+      {/* Content Area - Moved below the main tool */}
+      <ContentArea activeTab={activeTab} />
     </div>
   );
 };

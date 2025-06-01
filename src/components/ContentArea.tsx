@@ -91,6 +91,54 @@ const ContentArea: React.FC<ContentAreaProps> = ({ activeTab }) => {
             'Consistent with other forms'
           ]
         };
+      case '10-20kb':
+        return {
+          title: '10-20KB Signature Resize Guidelines',
+          specs: [
+            { label: 'Dimensions', value: '140 x 60 pixels' },
+            { label: 'File Size', value: '10-20KB range' },
+            { label: 'Format', value: 'JPG/PNG' },
+            { label: 'Compression', value: 'Optimized' }
+          ],
+          tips: [
+            'Perfect for most government forms',
+            'Balanced quality and file size',
+            'Widely accepted format',
+            'Good for online applications'
+          ]
+        };
+      case '20kb':
+        return {
+          title: '20KB Signature Resize Guidelines',
+          specs: [
+            { label: 'Dimensions', value: '140 x 60 pixels' },
+            { label: 'File Size', value: 'Maximum 20KB' },
+            { label: 'Format', value: 'JPG/PNG' },
+            { label: 'Quality', value: 'Standard' }
+          ],
+          tips: [
+            'Standard size for most applications',
+            'Good balance of quality and size',
+            'Compatible with most systems',
+            'Recommended for online forms'
+          ]
+        };
+      case '50kb':
+        return {
+          title: '50KB Signature Resize Guidelines',
+          specs: [
+            { label: 'Dimensions', value: '200 x 100 pixels' },
+            { label: 'File Size', value: 'Maximum 50KB' },
+            { label: 'Format', value: 'JPG/PNG' },
+            { label: 'Quality', value: 'High' }
+          ],
+          tips: [
+            'Higher quality for detailed signatures',
+            'Good for professional applications',
+            'Larger file size allows more detail',
+            'Suitable for print applications'
+          ]
+        };
       default:
         return {
           title: 'General Signature Resize Guidelines',
@@ -113,7 +161,7 @@ const ContentArea: React.FC<ContentAreaProps> = ({ activeTab }) => {
   const content = getTabContent();
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 mt-8">
       <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border-blue-200 dark:border-blue-800">
         <CardHeader>
           <CardTitle className="flex items-center gap-2 text-blue-900 dark:text-blue-100">
