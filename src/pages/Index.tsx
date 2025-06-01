@@ -1,13 +1,38 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React, { useState } from 'react';
+import Header from '../components/Header';
+import TabNavigation from '../components/TabNavigation';
+import MainContent from '../components/MainContent';
+import Sidebar from '../components/Sidebar';
+import Footer from '../components/Footer';
+import FeedbackButton from '../components/FeedbackButton';
+import { TooltipProvider } from '@/components/ui/tooltip';
 
 const Index = () => {
+  const [activeTab, setActiveTab] = useState('main');
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <TooltipProvider>
+      <div className={`min-h-screen bg-white ${darkMode ? 'dark' : ''} font-inter`}>
+        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+        <TabNavigation activeTab={activeTab} setActiveTab={setActiveTab} />
+        
+        <div className="container mx-auto px-4 py-8">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <div className="lg:col-span-3">
+              <MainContent activeTab={activeTab} />
+            </div>
+            <div className="lg:col-span-1">
+              <Sidebar />
+            </div>
+          </div>
+        </div>
+        
+        <Footer />
+        <FeedbackButton />
       </div>
-    </div>
+    </TooltipProvider>
   );
 };
 
