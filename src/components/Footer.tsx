@@ -75,28 +75,43 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Popular Resizing</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  SSC CGL Signature Resize
+                <a href="/signature-resize-10-to-20-kb" className="text-gray-300 hover:text-white transition-colors">
+                  Signature Resize 10 to 20 KB
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  PAN Card Signature
+                <a href="/signature-resize-20kb" className="text-gray-300 hover:text-white transition-colors">
+                  Signature Resize 20KB
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  GATE Exam Signature
+                <a href="/ssc-mts-signature-resize" className="text-gray-300 hover:text-white transition-colors">
+                  SSC MTS Signature Resize
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  Bank Form Signature
+                <a href="/pan-card-photo-signature-resize-tool" className="text-gray-300 hover:text-white transition-colors">
+                  PAN Card Photo Signature Resize Tool
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  Email Signature Creator
+                <a href="/signature-resize-50-kb" className="text-gray-300 hover:text-white transition-colors">
+                  Signature Resize 50 KB
+                </a>
+              </li>
+              <li>
+                <a href="/gate-signature-resize" className="text-gray-300 hover:text-white transition-colors">
+                  GATE Signature Resize
+                </a>
+              </li>
+              <li>
+                <a href="/rrb-signature-resize" className="text-gray-300 hover:text-white transition-colors">
+                  RRB Signature Resize
+                </a>
+              </li>
+              <li>
+                <a href="/uti-photo-signature-resize" className="text-gray-300 hover:text-white transition-colors">
+                  UTI Photo Signature Resize
                 </a>
               </li>
             </ul>
