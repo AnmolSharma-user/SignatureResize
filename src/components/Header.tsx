@@ -21,24 +21,36 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
       </div>
       
       <div className="container mx-auto px-2 sm:px-4 py-3 sm:py-6">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="text-center">
+        <div className="flex items-center justify-between gap-4">
+          {/* Logo positioned on far left */}
+          <div className="flex-shrink-0">
+            <img 
+              src="/logo.png" 
+              alt="SignatureResize.com Logo" 
+              className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14"
+            />
+          </div>
+          
+          {/* Text content in center */}
+          <div className="text-center flex-1">
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-              SignatureResize
+              SignatureResize.com
             </h1>
             <p className="text-gray-600 dark:text-gray-300 mt-1 sm:mt-2 text-sm sm:text-base lg:text-lg px-2">
               Free Online Tool to Perfect Your Digital Signature in Seconds
             </p>
           </div>
           
-          <Button
-            variant="outline"
-            size="icon"
-            onClick={() => setDarkMode(!darkMode)}
-            className="shrink-0"
-          >
-            {darkMode ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-          </Button>
+          {/* Dark mode toggle on far right */}
+          <div className="flex-shrink-0">
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={() => setDarkMode(!darkMode)}
+            >
+              {darkMode ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            </Button>
+          </div>
         </div>
       </div>
     </header>
