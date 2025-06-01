@@ -1,3 +1,4 @@
+
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -6,7 +7,7 @@ import { Input } from '@/components/ui/input';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
-import { Upload, Download, Share, Lock, Unlock, Info } from 'lucide-react';
+import { Upload, Download, Share, Lock, Unlock, Info, RotateCcw, RefreshCw } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
 
 interface MainContentProps {
@@ -153,6 +154,30 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab }) => {
     }
   };
 
+  // Reset function
+  const handleReset = () => {
+    setUploadedImage(null);
+    setProcessedImage(null);
+    setOriginalImageData(null);
+    setCustomWidth(preset.width.toString());
+    setCustomHeight(preset.height.toString());
+    setSize([preset.width]);
+    setRemoveBackground(true);
+    setLockAspectRatio(true);
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
+    toast({
+      title: "Reset complete",
+      description: "All settings have been reset to defaults.",
+    });
+  };
+
+  // Re-upload function
+  const handleReUpload = () => {
+    fileInputRef.current?.click();
+  };
+
   // Update processed image when dimensions or background settings change
   useEffect(() => {
     if (uploadedImage) {
@@ -276,10 +301,24 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab }) => {
         <CardHeader>
           <CardTitle className="flex items-center justify-between">
             <span>Dynamic Resizing Tool</span>
-            <Button variant="outline" size="sm" onClick={handleShare}>
-              <Share className="h-4 w-4 mr-2" />
-              Share Tool
-            </Button>
+            <div className="flex gap-2">
+              <Button variant="outline" size="sm" onClick={handleShare}>
+                <Share className="h-4 w-4 mr-2" />
+                Share Tool
+              </Button>
+              {uploadedImage && (
+                <>
+                  <Button variant="outline" size="sm" onClick={handleReUpload}>
+                    <RefreshCw className="h-4 w-4 mr-2" />
+                    Re-upload
+                  </Button>
+                  <Button variant="outline" size="sm" onClick={handleReset}>
+                    <RotateCcw className="h-4 w-4 mr-2" />
+                    Reset
+                  </Button>
+                </>
+              )}
+            </div>
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
