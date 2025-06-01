@@ -25,7 +25,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
           {/* Logo positioned on far left */}
           <div className="flex-shrink-0">
             <img 
-              src="public/logo.png" 
+              src="/logo.png" 
               alt="SignatureResize.com Logo" 
               className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14"
             />
