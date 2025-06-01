@@ -20,7 +20,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="text-xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent mb-4">
-              SignatureResize.com
+              SignatureResize
             </h3>
             <p className="text-gray-300 text-sm mb-4">
               The most trusted free online signature resizing tool. Perfect your digital signatures for government forms, emails, and professional documents.
@@ -132,7 +132,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 SignatureResize.com - Free Online Tool. All rights reserved.
+            © 2025 SignatureResize - Free Online Tool. All rights reserved.
           </p>
           <p className="text-gray-500 text-xs mt-2">
             Process images locally in your browser. No data sent to servers.
