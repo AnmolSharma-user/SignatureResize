@@ -15,6 +15,12 @@ import SignatureResize50kb from "./pages/SignatureResize50kb";
 import GateSignatureResize from "./pages/GateSignatureResize";
 import RrbSignatureResize from "./pages/RrbSignatureResize";
 import UtiPhotoSignatureResize from "./pages/UtiPhotoSignatureResize";
+import About from "./pages/About";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import Disclaimer from "./pages/Disclaimer";
+import ContactUs from "./pages/ContactUs";
+import FAQ from "./pages/FAQ";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +41,12 @@ const App = () => (
             <Route path="/gate-signature-resize" element={<GateSignatureResize />} />
             <Route path="/rrb-signature-resize" element={<RrbSignatureResize />} />
             <Route path="/uti-photo-signature-resize" element={<UtiPhotoSignatureResize />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/disclaimer" element={<Disclaimer />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/faq" element={<FAQ />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

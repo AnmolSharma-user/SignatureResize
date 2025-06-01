@@ -16,11 +16,11 @@ const Footer = () => {
       </div>
 
       <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
             <h3 className="text-xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent mb-4">
-              SignatureResize.pro
+              SignatureResize.com
             </h3>
             <p className="text-gray-300 text-sm mb-4">
               The most trusted free online signature resizing tool. Perfect your digital signatures for government forms, emails, and professional documents.
@@ -43,28 +43,33 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors flex items-center">
-                  Privacy Policy <ExternalLink className="h-3 w-3 ml-1" />
+                <a href="/about" className="text-gray-300 hover:text-white transition-colors">
+                  About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors flex items-center">
-                  Terms of Service <ExternalLink className="h-3 w-3 ml-1" />
+                <a href="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">
+                  Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors flex items-center">
-                  Contact Us <ExternalLink className="h-3 w-3 ml-1" />
+                <a href="/terms-of-service" className="text-gray-300 hover:text-white transition-colors">
+                  Terms of Service
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors flex items-center">
-                  Blog <ExternalLink className="h-3 w-3 ml-1" />
+                <a href="/disclaimer" className="text-gray-300 hover:text-white transition-colors">
+                  Disclaimer
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors flex items-center">
-                  FAQ <ExternalLink className="h-3 w-3 ml-1" />
+                <a href="/contact-us" className="text-gray-300 hover:text-white transition-colors">
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a href="/faq" className="text-gray-300 hover:text-white transition-colors">
+                  FAQ
                 </a>
               </li>
             </ul>
@@ -99,6 +104,13 @@ const Footer = () => {
                   Signature Resize 50 KB
                 </a>
               </li>
+            </ul>
+          </div>
+
+          {/* More Tools */}
+          <div>
+            <h4 className="font-semibold mb-4">More Tools</h4>
+            <ul className="space-y-2 text-sm">
               <li>
                 <a href="/gate-signature-resize" className="text-gray-300 hover:text-white transition-colors">
                   GATE Signature Resize
@@ -120,7 +132,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 SignatureResize.pro - Free Online Tool. All rights reserved.
+            © 2024 SignatureResize.com - Free Online Tool. All rights reserved.
           </p>
           <p className="text-gray-500 text-xs mt-2">
             Process images locally in your browser. No data sent to servers.
