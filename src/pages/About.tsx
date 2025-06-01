@@ -83,6 +83,18 @@ const About = () => {
                 </div>
 
                 <div className="bg-gray-50 dark:bg-slate-800 p-6 rounded-lg">
+                  <h3 className="text-xl font-semibold mb-3">Contact Us</h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-3">
+                    Have questions or need support? We're here to help:
+                  </p>
+                  <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+                    <li>• Email Support: signatureresize.com@gmail.com</li>
+                    <li>• Privacy Concerns: signatureresize.com@gmail.com</li>
+                    <li>• General Inquiries: signatureresize.com@gmail.com</li>
+                  </ul>
+                </div>
+
+                <div className="bg-gray-50 dark:bg-slate-800 p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-3">Why Choose Us?</h3>
                   <ul className="space-y-2 text-gray-600 dark:text-gray-300">
                     <li>• Supports all major image formats (JPG, PNG, WEBP, GIF)</li>

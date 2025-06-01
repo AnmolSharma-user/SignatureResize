@@ -32,7 +32,7 @@ const ContactUs = () => {
     e.preventDefault();
     // Handle form submission (would typically send to backend)
     console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
+    alert('Thank you for your message! We will get back to you soon at signatureresize.com@gmail.com');
     setFormData({ name: '', email: '', subject: '', message: '' });
   };
 
@@ -64,7 +64,7 @@ const ContactUs = () => {
                           <Mail className="h-5 w-5 text-blue-600" />
                           <div>
                             <p className="font-medium">Email Support</p>
-                            <p className="text-gray-600 dark:text-gray-300">support@signatureresize.com</p>
+                            <p className="text-gray-600 dark:text-gray-300">signatureresize.com@gmail.com</p>
                           </div>
                         </div>
                         
@@ -72,7 +72,7 @@ const ContactUs = () => {
                           <Shield className="h-5 w-5 text-blue-600" />
                           <div>
                             <p className="font-medium">Privacy Concerns</p>
-                            <p className="text-gray-600 dark:text-gray-300">privacy@signatureresize.com</p>
+                            <p className="text-gray-600 dark:text-gray-300">signatureresize.com@gmail.com</p>
                           </div>
                         </div>
                         
@@ -80,7 +80,7 @@ const ContactUs = () => {
                           <HelpCircle className="h-5 w-5 text-blue-600" />
                           <div>
                             <p className="font-medium">General Inquiries</p>
-                            <p className="text-gray-600 dark:text-gray-300">info@signatureresize.com</p>
+                            <p className="text-gray-600 dark:text-gray-300">signatureresize.com@gmail.com</p>
                           </div>
                         </div>
                       </div>

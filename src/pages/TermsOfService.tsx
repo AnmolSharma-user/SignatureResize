@@ -113,7 +113,7 @@ const TermsOfService = () => {
 
                 <div className="bg-blue-50 dark:bg-slate-800 p-4 rounded-lg">
                   <p className="font-semibold">
-                    Questions about these terms? Contact us at support@signatureresize.com
+                    Questions about these terms? Contact us at signatureresize.com@gmail.com
                   </p>
                 </div>
               </CardContent>

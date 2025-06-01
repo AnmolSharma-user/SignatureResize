@@ -107,7 +107,7 @@ const PrivacyPolicy = () => {
                     Contact Us
                   </h3>
                   <p>
-                    If you have questions about this privacy policy, please contact us through our contact page or email us at privacy@signatureresize.com
+                    If you have questions about this privacy policy, please contact us through our contact page or email us at signatureresize.com@gmail.com
                   </p>
                 </div>
 

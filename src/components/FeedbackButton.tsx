@@ -12,9 +12,11 @@ const FeedbackButton = () => {
 
   const handleSubmit = () => {
     if (feedback.trim()) {
+      // Here we would send to signatureresize.com@gmail.com via backend
+      console.log('Feedback to be sent to signatureresize.com@gmail.com:', feedback);
       toast({
         title: "Feedback sent!",
-        description: "Thank you for helping us improve.",
+        description: "Thank you for helping us improve. We'll review your feedback at signatureresize.com@gmail.com",
       });
       setFeedback('');
       setIsOpen(false);
@@ -43,7 +45,7 @@ const FeedbackButton = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-sm text-gray-600 dark:text-gray-300">
-                Help us improve SignatureResize.pro! Share your thoughts, report bugs, or suggest new features.
+                Help us improve SignatureResize.com! Share your thoughts, report bugs, or suggest new features.
               </p>
               <Textarea
                 placeholder="Your feedback..."
