@@ -24,7 +24,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-center">
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-              SignatureResize.pro
+              SignatureResize.com
             </h1>
             <p className="text-gray-600 dark:text-gray-300 mt-1 sm:mt-2 text-sm sm:text-base lg:text-lg px-2">
               Free Online Tool to Perfect Your Digital Signature in Seconds

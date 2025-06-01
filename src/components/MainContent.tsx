@@ -300,7 +300,7 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab }) => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center justify-between">
-            <span>Dynamic Resizing Tool</span>
+            <span>signature resize</span>
             <div className="flex gap-2">
               <Button variant="outline" size="sm" onClick={handleShare}>
                 <Share className="h-4 w-4 mr-2" />
