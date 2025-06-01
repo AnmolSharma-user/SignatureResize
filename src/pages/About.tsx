@@ -1,5 +1,5 @@
-
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import TabNavigation from '../components/TabNavigation';
 import Footer from '../components/Footer';
@@ -14,6 +14,20 @@ const About = () => {
 
   return (
     <TooltipProvider>
+      <Helmet>
+        <title>About Us | SignatureResize.pro | Free Online Signature Resizer</title>
+        <meta name="description" content="Learn about SignatureResize.pro - the free online signature resizing tool. Our mission, features, and commitment to privacy and security." />
+        <meta name="keywords" content="about signature resize, signature resizer tool, free signature tool, online signature resize, signature resize privacy" />
+        <link rel="canonical" href="https://signatureresize.pro/about" />
+        
+        <meta property="og:title" content="About Us | SignatureResize.pro" />
+        <meta property="og:description" content="Learn about SignatureResize.pro - the free online signature resizing tool." />
+        <meta property="og:url" content="https://signatureresize.pro/about" />
+        
+        <meta name="twitter:title" content="About Us | SignatureResize.pro" />
+        <meta name="twitter:description" content="Learn about SignatureResize.pro - the free online signature resizing tool." />
+      </Helmet>
+      
       <div className={`min-h-screen bg-white ${darkMode ? 'dark' : ''} font-inter`}>
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         <TabNavigation activeTab={activeTab} setActiveTab={setActiveTab} />

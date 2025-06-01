@@ -1,5 +1,5 @@
-
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import TabNavigation from '../components/TabNavigation';
 import MainContent from '../components/MainContent';
@@ -14,6 +14,27 @@ const Index = () => {
 
   return (
     <TooltipProvider>
+      <Helmet>
+        <title>Free Signature Resizer Tool | Resize Signature Online | SignatureResize.pro</title>
+        <meta name="description" content="Free online signature resize tool. Resize signatures to any size for government forms, applications. Supports 10KB, 20KB, 50KB sizes. No registration required." />
+        <meta name="keywords" content="signature resize, resize signature online, signature resizer tool, signature size reducer, free signature resize, online signature tool" />
+        <link rel="canonical" href="https://signatureresize.pro/" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Free Signature Resizer Tool | Resize Signature Online" />
+        <meta property="og:description" content="Free online signature resize tool. Resize signatures to any size for government forms, applications. No registration required." />
+        <meta property="og:url" content="https://signatureresize.pro/" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:title" content="Free Signature Resizer Tool | Resize Signature Online" />
+        <meta name="twitter:description" content="Free online signature resize tool. Resize signatures to any size for government forms, applications." />
+        
+        {/* Additional SEO */}
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="SignatureResize.pro" />
+      </Helmet>
+      
       <div className={`min-h-screen bg-white ${darkMode ? 'dark' : ''} font-inter`}>
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         <TabNavigation activeTab={activeTab} setActiveTab={setActiveTab} />

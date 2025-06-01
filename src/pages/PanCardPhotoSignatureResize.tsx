@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import TabNavigation from '../components/TabNavigation';
 import MainContent from '../components/MainContent';
@@ -13,6 +13,20 @@ const PanCardPhotoSignatureResize = () => {
 
   return (
     <TooltipProvider>
+      <Helmet>
+        <title>PAN Card Photo Signature Resize Tool | Free Online | SignatureResize.pro</title>
+        <meta name="description" content="Resize photo and signature for PAN card application online for free. Perfect size and format for PAN card registration. Secure and fast." />
+        <meta name="keywords" content="pan card photo signature resize tool, pan card signature resize, pan signature resize, pan photo resize, pan card application signature" />
+        <link rel="canonical" href="https://signatureresize.pro/pan-card-photo-signature-resize-tool" />
+        
+        <meta property="og:title" content="PAN Card Photo Signature Resize Tool | Free Online" />
+        <meta property="og:description" content="Resize photo and signature for PAN card application online for free." />
+        <meta property="og:url" content="https://signatureresize.pro/pan-card-photo-signature-resize-tool" />
+        
+        <meta name="twitter:title" content="PAN Card Photo Signature Resize Tool | Free Online" />
+        <meta name="twitter:description" content="Resize photo and signature for PAN card application online for free." />
+      </Helmet>
+      
       <div className={`min-h-screen bg-white ${darkMode ? 'dark' : ''} font-inter`}>
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         <TabNavigation activeTab="pan" setActiveTab={() => {}} />

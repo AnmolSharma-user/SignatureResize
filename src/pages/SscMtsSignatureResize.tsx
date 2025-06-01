@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import TabNavigation from '../components/TabNavigation';
 import MainContent from '../components/MainContent';
@@ -13,6 +13,20 @@ const SscMtsSignatureResize = () => {
 
   return (
     <TooltipProvider>
+      <Helmet>
+        <title>SSC MTS Signature Resize Tool | Free Online | SignatureResize.pro</title>
+        <meta name="description" content="Resize signature for SSC MTS application online for free. Perfect size and format for SSC Multi Tasking Staff forms. Easy and secure." />
+        <meta name="keywords" content="ssc mts signature resize, ssc signature resize, ssc mts photo signature resize, ssc signature size, ssc application signature" />
+        <link rel="canonical" href="https://signatureresize.pro/ssc-mts-signature-resize" />
+        
+        <meta property="og:title" content="SSC MTS Signature Resize Tool | Free Online" />
+        <meta property="og:description" content="Resize signature for SSC MTS application online for free. Perfect size and format for SSC forms." />
+        <meta property="og:url" content="https://signatureresize.pro/ssc-mts-signature-resize" />
+        
+        <meta name="twitter:title" content="SSC MTS Signature Resize Tool | Free Online" />
+        <meta name="twitter:description" content="Resize signature for SSC MTS application online for free." />
+      </Helmet>
+      
       <div className={`min-h-screen bg-white ${darkMode ? 'dark' : ''} font-inter`}>
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         <TabNavigation activeTab="ssc" setActiveTab={() => {}} />
