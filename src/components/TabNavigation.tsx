@@ -72,16 +72,6 @@ const TabNavigation: React.FC<TabNavigationProps> = ({ activeTab, setActiveTab }
       <div className="relative">
         <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
       </div>
-      
-      <style jsx>{`
-        .scrollbar-hide {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-        }
-      `}</style>
     </div>
   );
 };
