@@ -299,24 +299,24 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab }) => {
 
       <Card>
         <CardHeader>
-          <CardTitle className="flex items-center justify-between">
+          <CardTitle className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <span>signature resize</span>
-            <div className="flex gap-2">
-              <Button variant="outline" size="sm" onClick={handleShare}>
+            <div className="flex flex-col sm:flex-row gap-2">
+              <Button variant="outline" size="sm" onClick={handleShare} className="w-full sm:w-auto">
                 <Share className="h-4 w-4 mr-2" />
                 Share Tool
               </Button>
               {uploadedImage && (
-                <>
-                  <Button variant="outline" size="sm" onClick={handleReUpload}>
+                <div className="flex flex-col sm:flex-row gap-2">
+                  <Button variant="outline" size="sm" onClick={handleReUpload} className="w-full sm:w-auto">
                     <RefreshCw className="h-4 w-4 mr-2" />
                     Re-upload
                   </Button>
-                  <Button variant="outline" size="sm" onClick={handleReset}>
+                  <Button variant="outline" size="sm" onClick={handleReset} className="w-full sm:w-auto">
                     <RotateCcw className="h-4 w-4 mr-2" />
                     Reset
                   </Button>
-                </>
+                </div>
               )}
             </div>
           </CardTitle>
@@ -456,16 +456,16 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab }) => {
           )}
 
           {/* Download Buttons */}
-          <div className="flex flex-wrap gap-3 pt-4 border-t">
-            <Button onClick={() => downloadImage('PNG')} className="bg-green-600 hover:bg-green-700">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-4 border-t">
+            <Button onClick={() => downloadImage('PNG')} className="bg-green-600 hover:bg-green-700 w-full sm:w-auto">
               <Download className="h-4 w-4 mr-2" />
               Download PNG
             </Button>
-            <Button onClick={() => downloadImage('JPG')} variant="outline">
+            <Button onClick={() => downloadImage('JPG')} variant="outline" className="w-full sm:w-auto">
               <Download className="h-4 w-4 mr-2" />
               Download JPG
             </Button>
-            <Button onClick={() => downloadImage('SVG')} variant="outline">
+            <Button onClick={() => downloadImage('SVG')} variant="outline" className="w-full sm:w-auto">
               <Download className="h-4 w-4 mr-2" />
               Download SVG
             </Button>
