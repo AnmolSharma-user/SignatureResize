@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -10,6 +9,14 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useTranslation } from '../contexts/TranslationContext';
+import { 
+  ListTodo, 
+  ListCheck, 
+  List, 
+  ListOrdered, 
+  ListPlus,
+  NotebookTabs
+} from 'lucide-react';
 
 interface TabNavigationProps {
   activeTab: string;
@@ -17,15 +24,15 @@ interface TabNavigationProps {
 }
 
 const tabs = [
-  { id: 'main', label: 'tab.main', path: '/' },
-  { id: '10-20kb', label: 'tab.signature-resize-10-20kb', path: '/signature-resize-10-to-20-kb' },
-  { id: '20kb', label: 'tab.signature-resize-20kb', path: '/signature-resize-20kb' },
-  { id: 'ssc', label: 'tab.ssc-mts', path: '/ssc-mts-signature-resize' },
-  { id: 'pan', label: 'tab.pan-card', path: '/pan-card-photo-signature-resize-tool' },
-  { id: '50kb', label: 'tab.signature-resize-50kb', path: '/signature-resize-50-kb' },
-  { id: 'gate', label: 'tab.gate', path: '/gate-signature-resize' },
-  { id: 'rrb', label: 'tab.rrb', path: '/rrb-signature-resize' },
-  { id: 'uti', label: 'tab.uti', path: '/uti-photo-signature-resize' },
+  { id: 'main', label: 'tab.main', path: '/', icon: ListTodo },
+  { id: '10-20kb', label: 'tab.signature-resize-10-20kb', path: '/signature-resize-10-to-20-kb', icon: ListCheck },
+  { id: '20kb', label: 'tab.signature-resize-20kb', path: '/signature-resize-20kb', icon: List },
+  { id: 'ssc', label: 'tab.ssc-mts', path: '/ssc-mts-signature-resize', icon: ListOrdered },
+  { id: 'pan', label: 'tab.pan-card', path: '/pan-card-photo-signature-resize-tool', icon: NotebookTabs },
+  { id: '50kb', label: 'tab.signature-resize-50kb', path: '/signature-resize-50-kb', icon: ListPlus },
+  { id: 'gate', label: 'tab.gate', path: '/gate-signature-resize', icon: ListCheck },
+  { id: 'rrb', label: 'tab.rrb', path: '/rrb-signature-resize', icon: ListOrdered },
+  { id: 'uti', label: 'tab.uti', path: '/uti-photo-signature-resize', icon: List },
 ];
 
 // Only English and Hindi
@@ -70,40 +77,35 @@ const TabNavigation: React.FC<TabNavigationProps> = ({ activeTab, setActiveTab }
         <div className="flex items-center justify-between">
           <div className="flex overflow-x-auto scrollbar-hide flex-1">
             <div className="flex min-w-max">
-              {tabs.map((tab) => (
-                <button
-                  key={tab.id}
-                  onClick={() => handleTabClick(tab)}
-                  className={`
-                    relative px-4 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm font-medium transition-all duration-200 ease-in-out
-                    border-b-2 whitespace-nowrap flex items-center gap-2
-                    ${currentActiveTab === tab.id 
-                      ? 'text-blue-600 dark:text-blue-400 border-blue-600 dark:border-blue-400 bg-blue-50 dark:bg-slate-800/50' 
-                      : 'text-gray-600 dark:text-slate-300 border-transparent hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-slate-800/30'
-                    }
-                  `}
-                >
-                  {/* Icon based on tab type */}
-                  <span className="text-base hidden sm:inline">
-                    {tab.id === 'main' && '🔧'}
-                    {(tab.id === '10-20kb' || tab.id === '20kb' || tab.id === '50kb') && '📏'}
-                    {tab.id === 'ssc' && '📋'}
-                    {tab.id === 'pan' && '💳'}
-                    {tab.id === 'gate' && '🎓'}
-                    {tab.id === 'rrb' && '🚂'}
-                    {tab.id === 'uti' && '📄'}
-                  </span>
-                  
-                  <span className="truncate max-w-[120px] sm:max-w-none">
-                    {translate(tab.label)}
-                  </span>
-                  
-                  {/* Active indicator */}
-                  {currentActiveTab === tab.id && (
-                    <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-600 dark:bg-blue-400 rounded-t-full" />
-                  )}
-                </button>
-              ))}
+              {tabs.map((tab) => {
+                const IconComponent = tab.icon;
+                return (
+                  <button
+                    key={tab.id}
+                    onClick={() => handleTabClick(tab)}
+                    className={`
+                      relative px-4 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm font-medium transition-all duration-200 ease-in-out
+                      border-b-2 whitespace-nowrap flex items-center gap-2
+                      ${currentActiveTab === tab.id 
+                        ? 'text-blue-600 dark:text-blue-400 border-blue-600 dark:border-blue-400 bg-blue-50 dark:bg-slate-800/50' 
+                        : 'text-gray-600 dark:text-slate-300 border-transparent hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-slate-800/30'
+                      }
+                    `}
+                  >
+                    {/* Icon component */}
+                    <IconComponent className="w-4 h-4 hidden sm:inline" />
+                    
+                    <span className="truncate max-w-[120px] sm:max-w-none">
+                      {translate(tab.label)}
+                    </span>
+                    
+                    {/* Active indicator */}
+                    {currentActiveTab === tab.id && (
+                      <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-600 dark:bg-blue-400 rounded-t-full" />
+                    )}
+                  </button>
+                );
+              })}
             </div>
           </div>
           
