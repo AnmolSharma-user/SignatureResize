@@ -43,25 +43,45 @@ const TabNavigation: React.FC<TabNavigationProps> = ({ activeTab, setActiveTab }
   };
 
   return (
-    <div className="bg-gray-50 dark:bg-gray-800 border-b overflow-x-auto">
-      <div className="container mx-auto px-4">
-        <div className="flex space-x-1 py-2 min-w-max">
-          {tabs.map((tab) => (
-            <Button
-              key={tab.id}
-              variant={currentActiveTab === tab.id ? 'default' : 'ghost'}
-              className={`whitespace-nowrap px-4 py-2 rounded-lg transition-colors ${
-                currentActiveTab === tab.id 
-                  ? 'bg-primary text-white' 
-                  : 'text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
-              }`}
-              onClick={() => handleTabClick(tab)}
-            >
-              {tab.label}
-            </Button>
-          ))}
+    <div className="bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 border-b border-gray-200 dark:border-gray-700 shadow-sm">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="flex overflow-x-auto scrollbar-hide py-3 sm:py-4">
+          <div className="flex space-x-2 sm:space-x-3 min-w-max mx-auto">
+            {tabs.map((tab, index) => (
+              <Button
+                key={tab.id}
+                variant="ghost"
+                className={`relative px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl font-medium text-sm sm:text-base transition-all duration-300 ease-in-out transform hover:scale-105 ${
+                  currentActiveTab === tab.id 
+                    ? 'bg-white dark:bg-gray-700 text-primary shadow-lg shadow-gray-200/50 dark:shadow-gray-900/50 border border-gray-200 dark:border-gray-600' 
+                    : 'text-gray-600 dark:text-gray-300 hover:bg-white/70 dark:hover:bg-gray-700/70 hover:text-gray-900 dark:hover:text-white hover:shadow-md'
+                } ${index === 0 ? 'ml-0' : ''}`}
+                onClick={() => handleTabClick(tab)}
+              >
+                <span className="relative z-10">{tab.label}</span>
+                {currentActiveTab === tab.id && (
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-primary/10 rounded-xl" />
+                )}
+              </Button>
+            ))}
+          </div>
         </div>
       </div>
+      
+      {/* Active tab indicator line */}
+      <div className="relative">
+        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
+      </div>
+      
+      <style jsx>{`
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+      `}</style>
     </div>
   );
 };
