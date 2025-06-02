@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -22,6 +21,7 @@ import TermsOfService from "./pages/TermsOfService";
 import Disclaimer from "./pages/Disclaimer";
 import ContactUs from "./pages/ContactUs";
 import FAQ from "./pages/FAQ";
+import SignatureCreator from "./pages/SignatureCreator";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +35,7 @@ const App = () => (
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/signature-creator" element={<SignatureCreator />} />
               <Route path="/signature-resize-10-to-20-kb" element={<SignatureResize10to20kb />} />
               <Route path="/signature-resize-20kb" element={<SignatureResize20kb />} />
               <Route path="/ssc-mts-signature-resize" element={<SscMtsSignatureResize />} />
