@@ -126,6 +126,11 @@ const Footer = () => {
                   UTI Photo Signature Resize
                 </a>
               </li>
+              <li>
+                <a href="/signature-creator" className="text-gray-300 hover:text-white transition-colors">
+                  Signature Creator
+                </a>
+              </li>
             </ul>
           </div>
         </div>
