@@ -77,7 +77,7 @@ const MainContent: React.FC<MainContentProps> = ({ activeTab }) => {
       <Card>
         <CardHeader>
           <CardTitle className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-            <span>signature resize</span>
+            <span>Signature Resize</span>
             <div className="flex flex-col sm:flex-row gap-2">
               <Button variant="outline" size="sm" onClick={handleShare} className="w-full sm:w-auto">
                 <Share className="h-4 w-4 mr-2" />
