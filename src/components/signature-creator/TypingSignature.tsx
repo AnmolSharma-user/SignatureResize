@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -19,6 +18,12 @@ const signatureFonts = [
   { name: 'Formal Script', value: 'Alex Brush, cursive', preview: 'font-alex-brush' },
   { name: 'Stylish Script', value: 'Satisfy, cursive', preview: 'font-satisfy' },
   { name: 'Handwritten', value: 'Kaushan Script, cursive', preview: 'font-kaushan' },
+  { name: 'Elegant Cursive', value: 'Pacifico, cursive', preview: 'font-pacifico' },
+  { name: 'Flowing Script', value: 'Yellowtail, cursive', preview: 'font-yellowtail' },
+  { name: 'Royal Signature', value: 'Mr De Haviland, cursive', preview: 'font-mr-de-haviland' },
+  { name: 'Calligraphy', value: 'Sacramento, cursive', preview: 'font-sacramento' },
+  { name: 'Classic Script', value: 'Pinyon Script, cursive', preview: 'font-pinyon-script' },
+  { name: 'Vintage Sign', value: 'Herr Von Muellerhoff, cursive', preview: 'font-herr-von-muellerhoff' }
 ];
 
 const TypingSignature: React.FC<TypingSignatureProps> = ({ onBack }) => {
