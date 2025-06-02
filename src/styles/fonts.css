@@ -1,1 +1,17 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Allura&family=Alex+Brush&family=Satisfy&family=Kaushan+Script&family=Pacifico&family=Yellowtail&family=Mr+De+Haviland&family=Sacramento&family=Pinyon+Script&family=Herr+Von+Muellerhoff&display=swap');
+
+/* Font Preview Classes */
+.font-dancing { font-family: 'Dancing Script', cursive; }
+.font-great-vibes { font-family: 'Great Vibes', cursive; }
+.font-allura { font-family: 'Allura', cursive; }
+.font-alex-brush { font-family: 'Alex Brush', cursive; }
+.font-satisfy { font-family: 'Satisfy', cursive; }
+.font-kaushan { font-family: 'Kaushan Script', cursive; }
+.font-pacifico { font-family: 'Pacifico', cursive; }
+.font-yellowtail { font-family: 'Yellowtail', cursive; }
+.font-mr-de-haviland { font-family: 'Mr De Haviland', cursive; }
+.font-sacramento { font-family: 'Sacramento', cursive; }
+.font-pinyon-script { font-family: 'Pinyon Script', cursive; }
+.font-herr-von-muellerhoff { font-family: 'Herr Von Muellerhoff', cursive; }
 
