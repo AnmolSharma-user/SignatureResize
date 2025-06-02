@@ -1,7 +1,8 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Moon, Sun } from 'lucide-react';
+import { useNavigate } from "react-router-dom";
+
 
 interface HeaderProps {
   darkMode: boolean;
@@ -9,6 +10,8 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
+  const navigate = useNavigate();
+
   return (
     <header className="bg-white dark:bg-gray-900 shadow-sm border-b">
       {/* Top Ad Banner */}
@@ -28,6 +31,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
               src="/logo.png" 
               alt="SignatureResize.com Logo" 
               className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14"
+              onClick={() => navigate('/')}
             />
           </div>
           
@@ -47,6 +51,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
               variant="outline"
               size="icon"
               onClick={() => setDarkMode(!darkMode)}
+              className="text-gray-800 dark:text-yellow-400 hover:text-yellow-500 dark:hover:text-yellow-300"
             >
               {darkMode ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
             </Button>
