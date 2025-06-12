@@ -14,14 +14,14 @@ const UtiPhotoSignatureResize = () => {
   return (
     <TooltipProvider>
       <Helmet>
-        <title>UTI Photo Signature Resize Tool | Free Online | SignatureResize.com</title>
+        <title>UTI Photo Signature Resize Tool | Free Online | signaturereform.com</title>
         <meta name="description" content="Resize photo and signature for UTI application online for free. Perfect size and format for UTI registration forms. Fast and secure." />
         <meta name="keywords" content="uti photo signature resize, uti signature resize, uti application signature, uti photo resize, uti registration signature" />
-        <link rel="canonical" href="https://signatureresize.com/uti-photo-signature-resize" />
+        <link rel="canonical" href="https://signaturereform.com/uti-photo-signature-resize" />
         
         <meta property="og:title" content="UTI Photo Signature Resize Tool | Free Online" />
         <meta property="og:description" content="Resize photo and signature for UTI application online for free. Perfect for UTI registration forms." />
-        <meta property="og:url" content="https://signatureresize.com/uti-photo-signature-resize" />
+        <meta property="og:url" content="https://signaturereform.com/uti-photo-signature-resize" />
         
         <meta name="twitter:title" content="UTI Photo Signature Resize Tool | Free Online" />
         <meta name="twitter:description" content="Resize photo and signature for UTI application online for free." />
