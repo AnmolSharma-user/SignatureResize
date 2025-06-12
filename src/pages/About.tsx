@@ -15,17 +15,17 @@ const About = () => {
   return (
     <TooltipProvider>
       <Helmet>
-        <title>About Us | SignatureResize.com | Free Online Signature Resizer</title>
-        <meta name="description" content="Learn about SignatureResize.com - the free online signature resizing tool. Our mission, features, and commitment to privacy and security." />
+        <title>About Us | signaturereform.com | Free Online Signature Resizer</title>
+        <meta name="description" content="Learn about signaturereform.com - the free online signature resizing tool. Our mission, features, and commitment to privacy and security." />
         <meta name="keywords" content="about signature resize, signature resizer tool, free signature tool, online signature resize, signature resize privacy" />
-        <link rel="canonical" href="https://signatureresize.com/about" />
+        <link rel="canonical" href="https://signaturereform.com/about" />
         
-        <meta property="og:title" content="About Us | SignatureResize.com" />
-        <meta property="og:description" content="Learn about SignatureResize.com - the free online signature resizing tool." />
-        <meta property="og:url" content="https://signatureresize.com/about" />
+        <meta property="og:title" content="About Us | signaturereform.com" />
+        <meta property="og:description" content="Learn about signaturereform.com - the free online signature resizing tool." />
+        <meta property="og:url" content="https://signaturereform.com/about" />
         
-        <meta name="twitter:title" content="About Us | SignatureResize.com" />
-        <meta name="twitter:description" content="Learn about SignatureResize.com - the free online signature resizing tool." />
+        <meta name="twitter:title" content="About Us | signaturereform.com" />
+        <meta name="twitter:description" content="Learn about signaturereform.com - the free online signature resizing tool." />
       </Helmet>
       
       <div className={`min-h-screen bg-white ${darkMode ? 'dark' : ''} font-inter`}>
@@ -37,7 +37,7 @@ const About = () => {
             <Card>
               <CardHeader>
                 <CardTitle className="text-3xl font-bold text-center bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-                  About SignatureResize.com
+                  About signaturereform.com
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -92,7 +92,7 @@ const About = () => {
                 <div className="bg-blue-50 dark:bg-slate-800 p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-3">Our Mission</h3>
                   <p className="text-gray-600 dark:text-gray-300">
-                    SignatureResize.com was created to solve a common problem faced by millions of people - getting signature images to the exact size required for government forms, job applications, and official documents. We believe in providing a simple, secure, and free solution that works for everyone.
+                    signaturereform.com was created to solve a common problem faced by millions of people - getting signature images to the exact size required for government forms, job applications, and official documents. We believe in providing a simple, secure, and free solution that works for everyone.
                   </p>
                 </div>
 
@@ -102,9 +102,9 @@ const About = () => {
                     Have questions or need support? We're here to help:
                   </p>
                   <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                    <li>• Email Support: signatureresize.com@gmail.com</li>
-                    <li>• Privacy Concerns: signatureresize.com@gmail.com</li>
-                    <li>• General Inquiries: signatureresize.com@gmail.com</li>
+                    <li>• Email Support: signaturereform.com@gmail.com</li>
+                    <li>• Privacy Concerns: signaturereform.com@gmail.com</li>
+                    <li>• General Inquiries: signaturereform.com@gmail.com</li>
                   </ul>
                 </div>
 
