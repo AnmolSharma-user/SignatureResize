@@ -14,14 +14,14 @@ const SscMtsSignatureResize = () => {
   return (
     <TooltipProvider>
       <Helmet>
-        <title>SSC MTS Signature Resize Tool | Free Online | SignatureResize.com</title>
+        <title>SSC MTS Signature Resize Tool | Free Online | signaturereform.com</title>
         <meta name="description" content="Resize signature for SSC MTS application online for free. Perfect size and format for SSC Multi Tasking Staff forms. Easy and secure." />
         <meta name="keywords" content="ssc mts signature resize, ssc signature resize, ssc mts photo signature resize, ssc signature size, ssc application signature" />
-        <link rel="canonical" href="https://signatureresize.com/ssc-mts-signature-resize" />
+        <link rel="canonical" href="https://signaturereform.com/ssc-mts-signature-resize" />
         
         <meta property="og:title" content="SSC MTS Signature Resize Tool | Free Online" />
         <meta property="og:description" content="Resize signature for SSC MTS application online for free. Perfect size and format for SSC forms." />
-        <meta property="og:url" content="https://signatureresize.com/ssc-mts-signature-resize" />
+        <meta property="og:url" content="https://signaturereform.com/ssc-mts-signature-resize" />
         
         <meta name="twitter:title" content="SSC MTS Signature Resize Tool | Free Online" />
         <meta name="twitter:description" content="Resize signature for SSC MTS application online for free." />
