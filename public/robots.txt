@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://signatureresize.com/sitemap.xml
+Sitemap: https://www.signaturereform.com/sitemap.xml
 
 # Disallow admin or sensitive areas (add if needed)
 # Disallow: /admin/
