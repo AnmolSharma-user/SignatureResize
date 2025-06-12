@@ -14,14 +14,14 @@ const RrbSignatureResize = () => {
   return (
     <TooltipProvider>
       <Helmet>
-        <title>RRB Signature Resize Tool | Free Online | SignatureResize.com</title>
+        <title>RRB Signature Resize Tool | Free Online | signaturereform.com</title>
         <meta name="description" content="Resize signature for RRB exam application online for free. Perfect size and format for Railway Recruitment Board registration. Secure and fast." />
         <meta name="keywords" content="rrb signature resize, rrb exam signature resize, railway signature resize, rrb application signature, rrb photo signature resize" />
-        <link rel="canonical" href="https://signatureresize.com/rrb-signature-resize" />
+        <link rel="canonical" href="https://signaturereform.com/rrb-signature-resize" />
         
         <meta property="og:title" content="RRB Signature Resize Tool | Free Online" />
         <meta property="og:description" content="Resize signature for RRB exam application online for free. Perfect for Railway Recruitment Board registration." />
-        <meta property="og:url" content="https://signatureresize.com/rrb-signature-resize" />
+        <meta property="og:url" content="https://signaturereform.com/rrb-signature-resize" />
         
         <meta name="twitter:title" content="RRB Signature Resize Tool | Free Online" />
         <meta name="twitter:description" content="Resize signature for RRB exam application online for free." />
