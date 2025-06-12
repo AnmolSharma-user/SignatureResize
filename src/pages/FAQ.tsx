@@ -14,7 +14,7 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "How does SignatureResize.com work?",
+      question: "How does signaturereform.com work?",
       answer: "Our tool processes your signature images entirely in your web browser. Upload your signature image, select the desired size (10KB, 20KB, 50KB, etc.), and our algorithm will compress and resize it while maintaining quality. No data is sent to our servers - everything happens locally on your device."
     },
     {
@@ -39,7 +39,7 @@ const FAQ = () => {
     },
     {
       question: "Can I use this tool on my mobile phone?",
-      answer: "Yes! SignatureResize.com works on all devices including smartphones, tablets, and computers. The interface is fully responsive and optimized for mobile use."
+      answer: "Yes! signaturereform.com works on all devices including smartphones, tablets, and computers. The interface is fully responsive and optimized for mobile use."
     },
     {
       question: "Do I need to install any software?",
@@ -63,11 +63,11 @@ const FAQ = () => {
     },
     {
       question: "Is this service really free?",
-      answer: "Yes, SignatureResize.com is completely free to use with no hidden costs, subscriptions, or premium features. We believe signature resizing should be accessible to everyone."
+      answer: "Yes, signaturereform.com is completely free to use with no hidden costs, subscriptions, or premium features. We believe signature resizing should be accessible to everyone."
     },
     {
       question: "How can I contact support?",
-      answer: "You can reach us through our Contact Us page or email us directly at support@signatureresize.com. We typically respond within 24-48 hours."
+      answer: "You can reach us through our Contact Us page or email us directly at support@signaturereform.com. We typically respond within 24-48 hours."
     },
     {
       question: "Can I use the resized signatures for commercial purposes?",
