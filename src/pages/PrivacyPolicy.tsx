@@ -14,16 +14,16 @@ const PrivacyPolicy = () => {
   return (
     <TooltipProvider>
       <Helmet>
-        <title>Privacy Policy | SignatureResize.com | Secure Signature Resizing</title>
-        <meta name="description" content="Read our privacy policy. SignatureResize.com processes all images locally in your browser. Your signatures never leave your device. Complete privacy guaranteed." />
+        <title>Privacy Policy | signaturereform.com | Secure Signature Resizing</title>
+        <meta name="description" content="Read our privacy policy. signaturereform.com processes all images locally in your browser. Your signatures never leave your device. Complete privacy guaranteed." />
         <meta name="keywords" content="signature resize privacy policy, secure signature tool, privacy signature resize, local image processing" />
-        <link rel="canonical" href="https://signatureresize.com/privacy-policy" />
+        <link rel="canonical" href="https://signaturereform.com/privacy-policy" />
         
-        <meta property="og:title" content="Privacy Policy | SignatureResize.com" />
+        <meta property="og:title" content="Privacy Policy | signaturereform.com" />
         <meta property="og:description" content="Read our privacy policy. Complete privacy guaranteed - images processed locally." />
-        <meta property="og:url" content="https://signatureresize.com/privacy-policy" />
+        <meta property="og:url" content="https://signaturereform.com/privacy-policy" />
         
-        <meta name="twitter:title" content="Privacy Policy | SignatureResize.com" />
+        <meta name="twitter:title" content="Privacy Policy | signaturereform.com" />
         <meta name="twitter:description" content="Read our privacy policy. Complete privacy guaranteed." />
       </Helmet>
       
@@ -48,7 +48,7 @@ const PrivacyPolicy = () => {
                     Your Privacy is Our Priority
                   </h3>
                   <p>
-                    At SignatureResize.com, we are committed to protecting your privacy. This policy explains how we handle your information when you use our signature resizing tool.
+                    At signaturereform.com, we are committed to protecting your privacy. This policy explains how we handle your information when you use our signature resizing tool.
                   </p>
                 </div>
 
@@ -121,7 +121,7 @@ const PrivacyPolicy = () => {
                     Contact Us
                   </h3>
                   <p>
-                    If you have questions about this privacy policy, please contact us through our contact page or email us at signatureresize.com@gmail.com
+                    If you have questions about this privacy policy, please contact us through our contact page or email us at signaturereform.com@gmail.com
                   </p>
                 </div>
 
