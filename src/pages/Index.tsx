@@ -18,12 +18,12 @@ const Index = () => {
         <title>Free signature resize Tool - Resize Signature Online </title>
         <meta name="description" content="Free online signature resize tool. Resize signatures to any size for government forms, applications. Supports 10KB, 20KB, 50KB sizes. No registration required." />
         <meta name="keywords" content="signature resize, resize signature online, signature resizer tool, signature size reducer, free signature resize, online signature tool" />
-        <link rel="canonical" href="https://signatureresize.com/" />
+        <link rel="canonical" href="https://signaturereform.com/" />
         
         {/* Open Graph */}
         <meta property="og:title" content="Free Signature Resize Tool - Resize Signature Online" />
         <meta property="og:description" content="Free online signature resize tool. Resize signatures to any size for government forms, applications. No registration required." />
-        <meta property="og:url" content="https://signatureresize.com/" />
+        <meta property="og:url" content="https://signaturereform.com/" />
         <meta property="og:type" content="website" />
         
         {/* Twitter Card */}
@@ -32,7 +32,7 @@ const Index = () => {
         
         {/* Additional SEO */}
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="SignatureResize.com" />
+        <meta name="author" content="signaturereform.com" />
       </Helmet>
       
       <div className={`min-h-screen bg-white ${darkMode ? 'dark' : ''} font-inter`}>
