@@ -25,7 +25,7 @@ const Disclaimer = () => {
                   Disclaimer
                 </CardTitle>
                 <p className="text-center text-gray-600 dark:text-gray-300">
-                  Important information about using SignatureResize.com
+                  Important information about using signaturereform.com
                 </p>
               </CardHeader>
               <CardContent className="space-y-6 text-gray-600 dark:text-gray-300">
@@ -34,7 +34,7 @@ const Disclaimer = () => {
                     General Information
                   </h3>
                   <p>
-                    The information and tools provided by SignatureResize.com are for general informational and utility purposes only. While we strive to ensure the accuracy and reliability of our signature resizing service, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the service.
+                    The information and tools provided by signaturereform.com are for general informational and utility purposes only. While we strive to ensure the accuracy and reliability of our signature resizing service, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the service.
                   </p>
                 </div>
 
@@ -43,7 +43,7 @@ const Disclaimer = () => {
                     Use at Your Own Risk
                   </h3>
                   <p>
-                    Your use of SignatureResize.com and any reliance you place on the resized signature images is strictly at your own risk. We recommend that you:
+                    Your use of signaturereform.com and any reliance you place on the resized signature images is strictly at your own risk. We recommend that you:
                   </p>
                   <ul className="space-y-2 mt-2">
                     <li>• Always keep backup copies of your original signature images</li>
@@ -58,7 +58,7 @@ const Disclaimer = () => {
                     No Professional Advice
                   </h3>
                   <p>
-                    SignatureResize.com does not provide professional, legal, or official advice. Our tool is purely for technical image resizing purposes. We do not guarantee that resized signatures will be accepted by any specific organization, government agency, or institution.
+                    signaturereform.com does not provide professional, legal, or official advice. Our tool is purely for technical image resizing purposes. We do not guarantee that resized signatures will be accepted by any specific organization, government agency, or institution.
                   </p>
                 </div>
 
@@ -67,7 +67,7 @@ const Disclaimer = () => {
                     Limitation of Liability
                   </h3>
                   <p>
-                    In no event will SignatureResize.com be liable for any loss or damage including, without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from:
+                    In no event will signaturereform.com be liable for any loss or damage including, without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from:
                   </p>
                   <ul className="space-y-2 mt-2">
                     <li>• Loss of data or signature images</li>
