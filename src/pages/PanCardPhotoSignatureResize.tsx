@@ -14,14 +14,14 @@ const PanCardPhotoSignatureResize = () => {
   return (
     <TooltipProvider>
       <Helmet>
-        <title>PAN Card Photo Signature Resize Tool- SignatureResize.com</title>
+        <title>PAN Card Photo Signature Resize Tool- signaturereform.com</title>
         <meta name="description" content="Resize photo and signature for PAN card application online for free. Perfect size and format for PAN card registration. Secure and fast." />
         <meta name="keywords" content="pan card photo signature resize tool, pan card signature resize, pan signature resize, pan photo resize, pan card application signature" />
-        <link rel="canonical" href="https://signatureresize.com/pan-card-photo-signature-resize-tool" />
+        <link rel="canonical" href="https://signaturereform.com/pan-card-photo-signature-resize-tool" />
         
         <meta property="og:title" content="PAN Card Photo Signature Resize Tool - Free Online" />
         <meta property="og:description" content="Resize photo and signature for PAN card application online for free." />
-        <meta property="og:url" content="https://signatureresize.com/pan-card-photo-signature-resize-tool" />
+        <meta property="og:url" content="https://signaturereform.com/pan-card-photo-signature-resize-tool" />
         
         <meta name="twitter:title" content="PAN Card Photo Signature Resize Tool - Free Online" />
         <meta name="twitter:description" content="Resize photo and signature for PAN card application online for free." />
