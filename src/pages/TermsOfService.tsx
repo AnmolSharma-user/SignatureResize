@@ -34,7 +34,7 @@ const TermsOfService = () => {
                     Acceptance of Terms
                   </h3>
                   <p>
-                    By accessing and using SignatureResize.com, you accept and agree to be bound by the terms and provision of this agreement.
+                    By accessing and using signaturereform.com, you accept and agree to be bound by the terms and provision of this agreement.
                   </p>
                 </div>
 
@@ -43,7 +43,7 @@ const TermsOfService = () => {
                     Use License
                   </h3>
                   <p>
-                    Permission is granted to temporarily use SignatureResize.com for personal and commercial signature resizing purposes. This license includes:
+                    Permission is granted to temporarily use signaturereform.com for personal and commercial signature resizing purposes. This license includes:
                   </p>
                   <ul className="space-y-2 mt-2">
                     <li>• Free use of all signature resizing tools</li>
@@ -71,7 +71,7 @@ const TermsOfService = () => {
                     Disclaimer
                   </h3>
                   <p>
-                    The materials on SignatureResize.com are provided on an 'as is' basis. We make no warranties, expressed or implied, and hereby disclaim all warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+                    The materials on signaturereform.com are provided on an 'as is' basis. We make no warranties, expressed or implied, and hereby disclaim all warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
                   </p>
                 </div>
 
@@ -80,7 +80,7 @@ const TermsOfService = () => {
                     Limitations
                   </h3>
                   <p>
-                    In no event shall SignatureResize.com or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on SignatureResize.com, even if SignatureResize.com or an authorized representative has been notified orally or in writing of the possibility of such damage.
+                    In no event shall signaturereform.com or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on signaturereform.com, even if signaturereform.com or an authorized representative has been notified orally or in writing of the possibility of such damage.
                   </p>
                 </div>
 
@@ -89,7 +89,7 @@ const TermsOfService = () => {
                     Accuracy of Materials
                   </h3>
                   <p>
-                    The materials appearing on SignatureResize.com could include technical, typographical, or photographic errors. We do not warrant that any of the materials on its website are accurate, complete, or current.
+                    The materials appearing on signaturereform.com could include technical, typographical, or photographic errors. We do not warrant that any of the materials on its website are accurate, complete, or current.
                   </p>
                 </div>
 
@@ -98,7 +98,7 @@ const TermsOfService = () => {
                     Modifications
                   </h3>
                   <p>
-                    SignatureResize.com may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the then current version of these terms of service.
+                    signaturereform.com may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the then current version of these terms of service.
                   </p>
                 </div>
 
@@ -113,7 +113,7 @@ const TermsOfService = () => {
 
                 <div className="bg-blue-50 dark:bg-slate-800 p-4 rounded-lg">
                   <p className="font-semibold">
-                    Questions about these terms? Contact us at signatureresize.com@gmail.com
+                    Questions about these terms? Contact us at signaturereform.com@gmail.com
                   </p>
                 </div>
               </CardContent>
