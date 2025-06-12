@@ -6,11 +6,84 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
   <loc>https://www.signaturereform.com/</loc>
   <lastmod>2025-06-12T10:09:41+00:00</lastmod>
 </url>
 
+<url>
+  <loc>https://www.signaturereform.com/signature-creator</loc>
+  <lastmod>2025-06-12T10:09:41+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.signaturereform.com/signature-resize-10-to-20-kb</loc>
+  <lastmod>2025-06-12T10:09:41+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.signaturereform.com/signature-resize-20kb</loc>
+  <lastmod>2025-06-12T10:09:41+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.signaturereform.com/ssc-mts-signature-resize</loc>
+  <lastmod>2025-06-12T10:09:41+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.signaturereform.com/pan-card-photo-signature-resize-tool</loc>
+  <lastmod>2025-06-12T10:09:41+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.signaturereform.com/signature-resize-50-kb</loc>
+  <lastmod>2025-06-12T10:09:41+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.signaturereform.com/gate-signature-resize</loc>
+  <lastmod>2025-06-12T10:09:41+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.signaturereform.com/rrb-signature-resize</loc>
+  <lastmod>2025-06-12T10:09:41+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.signaturereform.com/uti-photo-signature-resize</loc>
+  <lastmod>2025-06-12T10:09:41+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.signaturereform.com/about</loc>
+  <lastmod>2025-06-12T10:09:41+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.signaturereform.com/privacy-policy</loc>
+  <lastmod>2025-06-12T10:09:41+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.signaturereform.com/terms-of-service</loc>
+  <lastmod>2025-06-12T10:09:41+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.signaturereform.com/disclaimer</loc>
+  <lastmod>2025-06-12T10:09:41+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.signaturereform.com/contact-us</loc>
+  <lastmod>2025-06-12T10:09:41+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.signaturereform.com/faq</loc>
+  <lastmod>2025-06-12T10:09:41+00:00</lastmod>
+</url>
 
 </urlset>
