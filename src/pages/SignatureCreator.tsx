@@ -105,10 +105,10 @@ const SignatureCreator = () => {
   if (creationMode !== 'select') {
     return <div className={`min-h-screen bg-background ${darkMode ? 'dark' : ''} font-inter`}>
         <Helmet>
-          <title>Signature Creator - Draw or Type Your Signature | SignatureResize.com</title>
+          <title>Signature Creator - Draw or Type Your Signature | signaturereform.com</title>
           <meta name="description" content="Create your digital signature by drawing or typing. Choose from various fonts and download in multiple formats. Free online signature creator tool." />
           <meta name="keywords" content="signature creator, draw signature, type signature, digital signature, signature fonts, online signature maker" />
-          <link rel="canonical" href="https://signatureresize.com/signature-creator" />
+          <link rel="canonical" href="https://signaturereform.com/signature-creator" />
         </Helmet>
         
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
@@ -124,10 +124,10 @@ const SignatureCreator = () => {
   }
   return <div className={`min-h-screen bg-background ${darkMode ? 'dark' : ''} font-inter relative overflow-hidden`}>
       <Helmet>
-        <title>Online Signature Creator - Create Digital Signatures Free | SignatureResize.com</title>
+        <title>Online Signature Creator - Create Digital Signatures Free | signaturereform.com</title>
         <meta name="description" content="Create professional digital signatures online for free. Draw or type your signature, customize fonts and colors, download as PNG with transparent background. No registration required!" />
         <meta name="keywords" content="online signature creator, digital signature maker, free signature tool, draw signature online, type signature, electronic signature" />
-        <link rel="canonical" href="https://signatureresize.com/signature-creator" />
+        <link rel="canonical" href="https://signaturereform.com/signature-creator" />
       </Helmet>
       
       {/* Subtle Animated Background Elements */}
