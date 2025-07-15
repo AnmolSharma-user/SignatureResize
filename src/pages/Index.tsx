@@ -6,6 +6,7 @@ import MainContent from '../components/MainContent';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
 import FeedbackButton from '../components/FeedbackButton';
+import ArticleSection from '../components/ArticleSection';
 import { TooltipProvider } from '@/components/ui/tooltip';
 
 const Index = () => {
@@ -49,6 +50,8 @@ const Index = () => {
             </div>
           </div>
         </div>
+        
+        <ArticleSection />
         
         <Footer />
         <FeedbackButton />
