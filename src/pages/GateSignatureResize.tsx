@@ -58,22 +58,87 @@ const GateSignatureResize = () => {
               <MainContent activeTab="gate" />
 
               {/* ✅ Optional Extra Content Section */}
-              <section className="mt-10">
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">
-                  How to Resize Your Signature for GATE
-                </h3>
-                <ol className="list-decimal list-inside text-gray-600 space-y-2">
-                  <li>Upload your signature image (JPG, JPEG, or PNG).</li>
-                  <li>Select the required dimensions and file size.</li>
-                  <li>Click “Resize” and download the optimized signature instantly.</li>
-                </ol>
+              {/* ✅ Informational Content Section */}
+<section className="mt-12 px-4 sm:px-6 lg:px-8 text-gray-700">
+  {/* Header */}
+  <h2 className="text-3xl font-semibold text-gray-800 text-center mb-6">
+    GATE Signature Resize – Everything You Need to Know
+  </h2>
 
-                <p className="mt-4 text-gray-600">
-                  This tool is designed for GATE aspirants who face upload errors due to incorrect
-                  signature sizes. It automatically adjusts your file to the required width, height,
-                  and KB limit.
-                </p>
-              </section>
+  {/* Introduction */}
+  <p className="max-w-3xl mx-auto text-center mb-8">
+    The GATE (Graduate Aptitude Test in Engineering) application requires a signature image 
+    that matches strict size and format specifications. Uploading an incorrect signature can 
+    lead to application rejection or repeated upload errors. Our free online tool simplifies 
+    this by helping you resize and optimize your signature instantly.
+  </p>
+
+  {/* Why We Need GATE Signature Resize */}
+  <div className="max-w-4xl mx-auto mb-12">
+    <h3 className="text-2xl font-semibold text-gray-800 mb-3">
+      Why Do You Need to Resize Your GATE Signature?
+    </h3>
+    <p className="text-gray-700 mb-4">
+      The GATE portal only accepts signature images that match its upload criteria for width, height, 
+      and file size. If your signature is too large or too small, the system rejects it. 
+      Resizing ensures your file meets those requirements, preventing upload failures 
+      and saving time during your registration.
+    </p>
+    <ul className="list-disc list-inside space-y-2">
+      <li>Maintains the correct aspect ratio and quality.</li>
+      <li>Ensures the image file size stays under the GATE upload limit.</li>
+      <li>Prevents application form rejection due to incorrect signature dimensions.</li>
+    </ul>
+  </div>
+
+  {/* How to Resize Section */}
+  <div className="max-w-4xl mx-auto">
+    <h3 className="text-2xl font-semibold text-gray-800 mb-3">
+      How to Resize Your Signature for GATE
+    </h3>
+    <p className="text-gray-700 mb-4">
+      Follow these simple steps to resize your signature using our GATE Signature Resize Tool:
+    </p>
+    <ol className="list-decimal list-inside space-y-3 text-gray-700">
+      <li>
+        <strong>Step 1:</strong> Upload your signature image (JPG, JPEG, or PNG format).
+        <div className="my-3">
+          <img
+            src="/images/gate-step1-upload.png"
+            alt="Upload signature step in GATE Signature Resize Tool"
+            className="rounded-xl shadow-md border mx-auto"
+          />
+        </div>
+      </li>
+      <li>
+        <strong>Step 2:</strong> Select the required dimensions and file size (or use auto-resize).
+        <div className="my-3">
+          <img
+            src="/images/gate-step2-settings.png"
+            alt="Select dimensions step in GATE Signature Resize Tool"
+            className="rounded-xl shadow-md border mx-auto"
+          />
+        </div>
+      </li>
+      <li>
+        <strong>Step 3:</strong> Click “Resize” and download the optimized signature instantly.
+        <div className="my-3">
+          <img
+            src="/images/gate-step3-download.png"
+            alt="Download resized signature in GATE tool"
+            className="rounded-xl shadow-md border mx-auto"
+          />
+        </div>
+      </li>
+    </ol>
+
+    <p className="mt-6 text-gray-700">
+      Our tool automatically adjusts your image to the official GATE requirements for width, height, 
+      and file size — ensuring 100% compliance without losing clarity.
+    </p>
+  </div>
+</section>
+
             </div>
 
             <div className="lg:col-span-1 order-2 lg:order-2">
