@@ -184,52 +184,60 @@ When you upload your signature, this tool automatically detects the size and dim
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-3">2. Using signaturereform.com to Resize Your Signature</h4>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <div className="flex items-center gap-2">
-                          <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">1</span>
-                          <span className="text-gray-700 dark:text-gray-300 text-sm">Go to signaturereform.com</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">2</span>
-                          <span className="text-gray-700 dark:text-gray-300 text-sm">Upload via drag-and-drop</span><br>
-                          <img
-          src="/upload.png"
-          alt="Upload Via drag and drop or select in signature resizer"
-          className="rounded-xl shadow-md border border-gray-200 mx-auto"
-        /><br>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">3</span>
-                          <span className="text-gray-700 dark:text-gray-300 text-sm">Enter target dimensions</span><br>
-                          <img
-          src="/capture.png"
-          alt="Enter Target dimensions on signature resizer"
-          className="rounded-xl shadow-md border border-gray-200 mx-auto"
-        /><br>
-                        </div>
-                      </div>
-                      <div className="space-y-2">
-                        <div className="flex items-center gap-2">
-                          <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">4</span>
-                          <span className="text-gray-700 dark:text-gray-300 text-sm">Choose output format</span><br>
-                          <img
-          src="/download.png"
-          alt="Download resized signature - Signature Resize Tool"
-          className="rounded-xl shadow-md border border-gray-200 mx-auto"
-        /><br>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">5</span>
-                          <span className="text-gray-700 dark:text-gray-300 text-sm">Preview your result</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">6</span>
-                          <span className="text-gray-700 dark:text-gray-300 text-sm">Download optimized signature</span>
-                        </div>
-                      </div>
-                    </div>
+                    <div>
+  <h4 className="font-semibold text-gray-900 dark:text-white mb-3">
+    2. Using signaturereform.com to Resize Your Signature
+  </h4>
+
+  {/* Step Images Grid */}
+  <div className="space-y-10">
+    {/* Step 1 */}
+    <div>
+      <h5 className="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">
+        Step 1: Upload Your Signature Image
+      </h5>
+      <p className="text-gray-700 dark:text-gray-300 mb-3">
+        Go to <a href="https://signaturereform.com" className="text-blue-600 hover:underline">signaturereform.com</a> and click on the upload area to select your signature image (JPG, JPEG, or PNG).
+      </p>
+      <img
+        src="/upload.png"
+        alt="Upload  Signature Resize Tool"
+        className="rounded-xl shadow-md border border-gray-200 dark:border-gray-700 mx-auto"
+      />
+    </div>
+
+    {/* Step 2 */}
+    <div>
+      <h5 className="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">
+        Step 2: Adjust Dimensions and File Size
+      </h5>
+      <p className="text-gray-700 dark:text-gray-300 mb-3">
+        Enter the required width, height, and file size (in KB) for the GATE application form. The tool will automatically adjust your signature according to official GATE specifications.
+      </p>
+      <img
+        src="/capture.png"
+        alt="Adjust dimensions Signature Resize Tool"
+        className="rounded-xl shadow-md border border-gray-200 dark:border-gray-700 mx-auto"
+      />
+    </div>
+
+    {/* Step 3 */}
+    <div>
+      <h5 className="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">
+        Step 3: Resize and Download
+      </h5>
+      <p className="text-gray-700 dark:text-gray-300 mb-3">
+        Click “Resize” and wait a few seconds. Once done, your optimized GATE signature will be ready for download — perfectly sized for upload.
+      </p>
+      <img
+        src="/download.png"
+        alt="Download  Signature Resize Tool"
+        className="rounded-xl shadow-md border border-gray-200 dark:border-gray-700 mx-auto"
+      />
+    </div>
+  </div>
+</div>
+
                   </div>
 
                   <div>
