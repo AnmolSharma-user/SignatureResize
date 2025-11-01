@@ -104,8 +104,8 @@ const GateSignatureResize = () => {
         <strong>Step 1:</strong> Upload your signature image (JPG, JPEG, or PNG format).
         <div className="my-3">
           <img
-            src="/images/gate-step1-upload.png"
-            alt="Upload signature step in GATE Signature Resize Tool"
+            src="/upload.png"
+            alt="Upload signature in GATE Signature Resize Tool"
             className="rounded-xl shadow-md border mx-auto"
           />
         </div>
@@ -114,8 +114,8 @@ const GateSignatureResize = () => {
         <strong>Step 2:</strong> Select the required dimensions and file size (or use auto-resize).
         <div className="my-3">
           <img
-            src="/images/gate-step2-settings.png"
-            alt="Select dimensions step in GATE Signature Resize Tool"
+            src="/capture.png"
+            alt="Select dimensions in GATE Signature Resize Tool"
             className="rounded-xl shadow-md border mx-auto"
           />
         </div>
@@ -124,7 +124,7 @@ const GateSignatureResize = () => {
         <strong>Step 3:</strong> Click “Resize” and download the optimized signature instantly.
         <div className="my-3">
           <img
-            src="/images/gate-step3-download.png"
+            src="/download.png"
             alt="Download resized signature in GATE tool"
             className="rounded-xl shadow-md border mx-auto"
           />
