@@ -41,24 +41,22 @@ const GateSignatureResize = () => {
         <TabNavigation activeTab="gate" setActiveTab={() => {}} />
 
         <div className="container mx-auto px-2 sm:px-4 py-4 sm:py-8">
-          {/* ✅ Page Heading & Description Section */}
+         
           <section className="text-center mb-8">
             <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-3">
               GATE Signature Resize – Free Online Tool
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Resize your GATE exam signature to the correct format and dimensions in seconds.
-              Our free tool ensures your signature meets the official GATE application
-              requirements — quick, accurate, and completely secure.
             </p>
           </section>
 
-          {/* ✅ Main Layout Grid */}
+          
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-8">
             <div className="lg:col-span-3 order-1 lg:order-1">
               <MainContent activeTab="gate" />
 
-              {/* ✅ Optional Extra Content Section */}
+             
               <section className="mt-10">
                 <h3 className="text-xl font-semibold mb-2 text-gray-800">
                   How to Resize Your Signature for GATE
