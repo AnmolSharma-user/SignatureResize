@@ -194,16 +194,31 @@ When you upload your signature, this tool automatically detects the size and dim
                         <div className="flex items-center gap-2">
                           <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">2</span>
                           <span className="text-gray-700 dark:text-gray-300 text-sm">Upload via drag-and-drop</span>
+                          <img
+          src="/upload.png"
+          alt="Upload Via drag and drop or select in signature resizer"
+          className="rounded-xl shadow-md border border-gray-200 mx-auto"
+        />
                         </div>
                         <div className="flex items-center gap-2">
                           <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">3</span>
                           <span className="text-gray-700 dark:text-gray-300 text-sm">Enter target dimensions</span>
+                          <img
+          src="/capture.png"
+          alt="Enter Target dimensions on signature resizer"
+          className="rounded-xl shadow-md border border-gray-200 mx-auto"
+        />
                         </div>
                       </div>
                       <div className="space-y-2">
                         <div className="flex items-center gap-2">
                           <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">4</span>
                           <span className="text-gray-700 dark:text-gray-300 text-sm">Choose output format</span>
+                          <img
+          src="/download.png"
+          alt="Download resized signature - Signature Resize Tool"
+          className="rounded-xl shadow-md border border-gray-200 mx-auto"
+        />
                         </div>
                         <div className="flex items-center gap-2">
                           <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">5</span>
