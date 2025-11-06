@@ -11,7 +11,7 @@ const navLinks = [
   { name: 'Home', to: '/' },
   { name: 'About', to: '/about' },
   { name: 'Contact', to: '/contact-us' },
-  { name: 'Ai Gen', to: 'ai.signaturereform.com'},
+  { name: 'Ai Gen', to: 'https://ai.signaturereform.com'},
 ];
 
 const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
